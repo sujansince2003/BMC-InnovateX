@@ -2,44 +2,68 @@ import React from "react";
 import Navbar from "../components/header/Nav";
 import Image from "next/image";
 
-const mascot = "/assets/mascot.png";
-const roundedRect1 = "/assets/roundedRect1.png";
-const roundedRect2 = "/assets/roundedRect2.png";
-const roundedRect3 = "/assets/roundedRect3.png";
-const roundedRect4 = "/assets/roundedRect4.png";
-
 const HeroPage = () => {
   return (
     <div className="h-screen bg-[#008FAD] relative">
       <Navbar />
-      <div className="z-10 flex flex-col gap-5 items-center absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 ">
-        <h1 className="text-4xl text-white font-medium ">
-          NATIONAL LEVEL HACKATHON
-        </h1>
-        <h1 className="text-7xl font-extrabold text-white">BMC InnovateX</h1>
-        <h1 className=" text-white text-4xl font-medium ">
+      <div className="z-10 flex flex-col gap-12 items-center absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 ">
+        <div className="flex flex-col gap-6 items-center justify-center">
+          <h1 className="lg:text-[40px]  text-5xl text-white font-medium ">
+            NATIONAL LEVEL HACKATHON
+          </h1>
+          <h1 className="lg:text-[90px]  text-7xl font-extrabold text-white">
+            BMC InnovateX
+          </h1>
+        </div>
+
+        <h1 className=" text-white text-5xl font-medium ">
           Think Big, Innovate Bigger
         </h1>
         <div>
-          <button className="hover:bg-white hover:text-[#0684A1] border-2 border-white text-xl text-white rounded-3xl py-2 px-6">
+          <button className="hover:bg-white hover:text-[#0684A1] border-2  border-white text-2xl text-white mt-6 rounded-3xl py-2 px-8">
             REGISTER NOW
           </button>
         </div>
       </div>
       <div className="absolute bottom-18 left-15 ">
-        <Image src={roundedRect1} alt="mascot" width={480} height={175} />
+        <Image
+          src={"https://i.postimg.cc/LXzvrKT4/roundedrect1.png"}
+          alt="mascot"
+          width={480}
+          height={175}
+        />
       </div>
       <div className="absolute bottom-0 left-[39%] ">
-        <Image src={roundedRect2} alt="mascot" width={500} height={175} />
+        <Image
+          src={"https://i.postimg.cc/4yPPx6qr/roundedrect2.png"}
+          alt="mascot"
+          width={500}
+          height={175}
+        />
       </div>
       <div className="absolute bottom-71 right-[26%] ">
-        <Image src={roundedRect3} alt="mascot" width={280} height={100} />
+        <Image
+          src={"https://i.postimg.cc/m2ZV6nFR/roundedrect3.png"}
+          alt="mascot"
+          width={280}
+          height={100}
+        />
       </div>
       <div className="absolute bottom-20 right-0 ">
-        <Image src={roundedRect4} alt="mascot" width={400} height={175} />
+        <Image
+          src={"https://i.postimg.cc/Pr6KGMmD/roundedrect4.png"}
+          alt="mascot"
+          width={400}
+          height={175}
+        />
       </div>
       <div className="absolute bottom-0 right-0 ">
-        <Image src={mascot} alt="mascot" width={350} height={350} />
+        <Image
+          src={"https://i.postimg.cc/Dy5pvhK8/mascot.png"}
+          alt="mascot"
+          width={350}
+          height={350}
+        />
       </div>
       <div className="absolute bottom-12 left-16">
         <LeftDots />
