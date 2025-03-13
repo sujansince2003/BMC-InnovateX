@@ -12,13 +12,13 @@ const navItems = [
 ];
 import React, { useState } from "react";
 import Link from "next/link";
-const logo = "/assets/logo.png";
+const logo = "https://i.postimg.cc/xj3t5Q8t/logo.png";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const toggleNav = () => setIsOpen((prev) => !prev);
   return (
-    <nav className="  fixed w-full z-20 top-0 start-0  ">
+    <nav className=" bg-[#008FAD]  fixed w-full z-20 top-0 start-0  ">
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
         <Image src={logo} width={200} height={100} alt="Flowbite Logo" />
 
