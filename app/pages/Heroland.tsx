@@ -14,7 +14,7 @@ const Heroland = () => {
           </p>
           <div className="flex gap-4 justify-center">
             <a href="  ">
-              <button className="bg-indigo-600 cursor-pointer text-white px-8 py-3 rounded-lg font-semibold hover:bg-indigo-700 transition flex items-center">
+              <button className="bg-[#008FAD] cursor-pointer text-white px-8 py-3 rounded-lg font-semibold hover:bg-indigo-700 transition flex items-center">
                 View Proposal <ChevronRight className="ml-2 h-5 w-5" />
               </button>
             </a>

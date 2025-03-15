@@ -29,8 +29,8 @@ const HeroPage = () => {
         <Image
           src={"https://i.postimg.cc/LXzvrKT4/roundedrect1.png"}
           alt="mascot"
-          width={480}
-          height={175}
+          width={520}
+          height={100}
         />
       </div>
       <div className="absolute bottom-0 left-[39%] ">
@@ -45,7 +45,7 @@ const HeroPage = () => {
         <Image
           src={"https://i.postimg.cc/m2ZV6nFR/roundedrect3.png"}
           alt="mascot"
-          width={280}
+          width={350}
           height={100}
         />
       </div>
@@ -53,7 +53,7 @@ const HeroPage = () => {
         <Image
           src={"https://i.postimg.cc/Pr6KGMmD/roundedrect4.png"}
           alt="mascot"
-          width={400}
+          width={500}
           height={175}
         />
       </div>

@@ -17,7 +17,7 @@ const Timeline = () => {
                   <h3 className="font-semibold text-lg">Opening Ceremony</h3>
                   <p className="text-gray-600">TBA</p>
                 </div>
-                <div className="absolute left-1/2 transform -translate-x-1/2 w-4 h-4 bg-indigo-600 rounded-full"></div>
+                <div className="absolute left-1/2 transform -translate-x-1/2 w-4 h-4 bg-[#008FAD] rounded-full"></div>
                 <div className="w-5/12 pl-8">
                   <p className="text-gray-600">
                     Kickoff event with keynote speakers and track announcements
@@ -30,7 +30,7 @@ const Timeline = () => {
                   <h3 className="font-semibold text-lg">Hacking Begins</h3>
                   <p className="text-gray-600">TBA</p>
                 </div>
-                <div className="absolute left-1/2 transform -translate-x-1/2 w-4 h-4 bg-indigo-600 rounded-full"></div>
+                <div className="absolute left-1/2 transform -translate-x-1/2 w-4 h-4 bg-[#008FAD] rounded-full"></div>
                 <div className="w-5/12 pl-8">
                   <p className="text-gray-600">
                     Start building your innovative solutions
@@ -43,7 +43,7 @@ const Timeline = () => {
                   <h3 className="font-semibold text-lg">Mentorship Sessions</h3>
                   <p className="text-gray-600">TBA</p>
                 </div>
-                <div className="absolute left-1/2 transform -translate-x-1/2 w-4 h-4 bg-indigo-600 rounded-full"></div>
+                <div className="absolute left-1/2 transform -translate-x-1/2 w-4 h-4 bg-[#008FAD]    rounded-full"></div>
                 <div className="w-5/12 pl-8">
                   <p className="text-gray-600">
                     One-on-one sessions with industry experts
@@ -56,7 +56,7 @@ const Timeline = () => {
                   <h3 className="font-semibold text-lg">Project Submission</h3>
                   <p className="text-gray-600">TBA</p>
                 </div>
-                <div className="absolute left-1/2 transform -translate-x-1/2 w-4 h-4 bg-indigo-600 rounded-full"></div>
+                <div className="absolute left-1/2 transform -translate-x-1/2 w-4 h-4 bg-[#008FAD]  rounded-full"></div>
                 <div className="w-5/12 pl-8">
                   <p className="text-gray-600">
                     Submit your projects for evaluation
@@ -69,7 +69,7 @@ const Timeline = () => {
                   <h3 className="font-semibold text-lg">Closing Ceremony</h3>
                   <p className="text-gray-600">TBA</p>
                 </div>
-                <div className="absolute left-1/2 transform -translate-x-1/2 w-4 h-4 bg-indigo-600 rounded-full"></div>
+                <div className="absolute left-1/2 transform -translate-x-1/2 w-4 h-4 bg-[#008FAD] rounded-full"></div>
                 <div className="w-5/12 pl-8">
                   <p className="text-gray-600">
                     Winners announcement and prize distribution

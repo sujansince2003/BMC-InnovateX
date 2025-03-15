@@ -10,7 +10,7 @@ const Track = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div className="bg-white p-8 rounded-xl shadow-sm">
             <div className="bg-blue-100 w-12 h-12 flex items-center justify-center rounded-lg mb-4">
-              <Laptop className="h-6 w-6 text-blue-600" />
+              <Laptop className="h-6 w-6 text-[#008FAD] " />
             </div>
             <h3 className="text-xl font-semibold mb-3">AI/ML</h3>
             <p className="text-gray-600">
@@ -29,7 +29,7 @@ const Track = () => {
           </div>
           <div className="bg-white p-8 rounded-xl shadow-sm">
             <div className="bg-purple-100 w-12 h-12 flex items-center justify-center rounded-lg mb-4">
-              <Laptop className="h-6 w-6 text-purple-600" />
+              <Laptop className="h-6 w-6 text-[#008FAD] " />
             </div>
             <h3 className="text-xl font-semibold mb-3">Open Innovation</h3>
             <p className="text-gray-600">
