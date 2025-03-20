@@ -1,26 +1,27 @@
-import Navbar from "../components/header/Nav";
 import Image from "next/image";
 
-const HeroPage = () => {
+const HeroLander = () => {
   return (
-    <div className="h-screen bg-[#008FAD] relative overflow-hidden">
-      <Navbar />
+    <div className="h-[45rem] lg:h-screen bg-[#008FAD] relative overflow-hidden">
       <div className="z-10 flex flex-col gap-14 md:gap-12 items-center absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full px-4">
-        <div className="flex flex-col gap-3 md:gap-6 items-center justify-center text-center">
-          <h1 className="text-xl md:text-3xl lg:text-[40px] text-white font-medium">
+        <div className="flex flex-col gap-5 md:gap-6 items-center justify-center text-center">
+          <h1 className="text-xl md:text-3xl lg:text-[30px] text-white font-medium">
             NATIONAL LEVEL HACKATHON
           </h1>
-          <h1 className="text-4xl md:text-6xl lg:text-[90px] font-extrabold text-white">
+          <h1 className="text-5xl md:text-5xl lg:text-[90px] font-extrabold text-white">
             BMC InnovateX
           </h1>
-        </div>
 
-        <h1 className="text-white text-xl md:text-3xl lg:text-5xl font-medium text-center">
-          Think Big, Innovate Bigger
-        </h1>
+          <h1 className="text-white text-xl md:text-3xl lg:text-[30px] font-medium text-center">
+            Think Big, Innovate Bigger
+          </h1>
+        </div>
         <div>
-          <button className="hover:bg-white bg-white md:bg-transparent hover:text-[#0684A1] border-2 border-white text-lg md:text-2xl md:text-white text-[#0684A1] mt-4 md:mt-6 rounded-3xl py-2 px-6 md:px-8">
-            REGISTER NOW
+          <button
+            className="hover:bg-white bg-white hover:text-[#0684A1] border-2 border-white text-lg md:text-2xl text-[#0684A1] mt-4 md:mt-6 rounded-3xl py-2 px-6 md:px-8"
+            disabled
+          >
+            Registration Opening Soon
           </button>
         </div>
       </div>
@@ -87,7 +88,7 @@ const HeroPage = () => {
   );
 };
 
-export default HeroPage;
+export default HeroLander;
 
 function Dots() {
   return (

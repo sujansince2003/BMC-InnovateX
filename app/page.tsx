@@ -1,29 +1,23 @@
-import {
-  Track,
-  Timeline,
-  Sponsor,
-  Prizes,
-  KeyInfo,
-  Judges,
-  Heroland,
-  Footer,
-  FAQ,
-} from "./pages";
-import HeroPage from "./pages/HeroPage";
+import { AdPopup } from "./component/AdPopup";
+import FAQ from "./component/FAQ";
+import HeroLander from "./component/HeroLander";
+import KeyInfo from "./component/KeyInfo";
+import Prizes from "./component/Prizes";
+import Sponsor from "./component/Sponsor";
+import Timeline from "./component/Timeline";
+import Track from "./component/Track";
 
 export default function Home() {
   return (
-    <div>
-      <HeroPage />
-      <Heroland />
+    <>
+      <AdPopup />
+      <HeroLander />
       <KeyInfo />
       <Timeline />
       <Track />
-      <Judges />
       <Prizes />
       <Sponsor />
       <FAQ />
-      <Footer />
-    </div>
+    </>
   );
 }

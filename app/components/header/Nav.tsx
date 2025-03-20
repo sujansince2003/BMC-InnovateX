@@ -2,13 +2,18 @@
 import Image from "next/image";
 import { LuMenu } from "react-icons/lu";
 import { RxCross1 } from "react-icons/rx";
-const navItems = [
-  { name: "Home", slug: "/", active: true },
-  { name: "Events", slug: "/events", active: true },
-  { name: "Team", slug: "/team", active: true },
-  { name: "Notice", slug: "/notice", active: true },
+interface NavItem {
+  name: string;
+  slug: string;
+  active: boolean;
+}
 
-  { name: "Contact", slug: "/contact", active: true },
+const navItems: NavItem[] = [
+  // { name: "Home", slug: "/", active: true },
+  // { name: "Events", slug: "/events", active: true },
+  // { name: "Team", slug: "/team", active: true },
+  // { name: "Notice", slug: "/notice", active: true },
+  // { name: "Contact", slug: "/contact", active: true },
 ];
 import React, { useState } from "react";
 import Link from "next/link";
