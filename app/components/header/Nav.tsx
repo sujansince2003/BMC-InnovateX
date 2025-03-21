@@ -8,16 +8,19 @@ interface NavItem {
   active: boolean;
 }
 
-const navItems: NavItem[] = [
-  // { name: "Home", slug: "/", active: true },
-  // { name: "Events", slug: "/events", active: true },
-  // { name: "Team", slug: "/team", active: true },
-  // { name: "Notice", slug: "/notice", active: true },
-  // { name: "Contact", slug: "/contact", active: true },
+export const navItems: NavItem[] = [
+  { name: "Home", slug: "/", active: true },
+  { name: "About", slug: "/about", active: true },
+  { name: "Schedule", slug: "/schedule", active: true },
+  { name: "Prizes", slug: "/prizes", active: true },
+  { name: "Sponsors", slug: "/sponsors", active: true },
+  { name: "Tracks", slug: "/tracks", active: true },
+  { name: "Judges", slug: "/judges", active: true },
 ];
 import React, { useState } from "react";
 import Link from "next/link";
-const logo = "https://i.postimg.cc/xj3t5Q8t/logo.png";
+const logo =
+  "https://res.cloudinary.com/dtr4vo1dy/image/upload/v1742566658/logo_b4r5vm.png";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);

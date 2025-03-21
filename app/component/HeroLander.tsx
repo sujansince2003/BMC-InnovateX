@@ -29,7 +29,9 @@ const HeroLander = () => {
       {/* Background Images */}
       <div className="absolute bottom-18 left-15 hidden md:block">
         <Image
-          src={"https://i.postimg.cc/LXzvrKT4/roundedrect1.png"}
+          src={
+            "https://res.cloudinary.com/dtr4vo1dy/image/upload/v1742566659/roundedrect1_gomv4w.png"
+          }
           alt="mascot"
           width={520}
           height={100}
@@ -37,7 +39,9 @@ const HeroLander = () => {
       </div>
       <div className="absolute bottom-40 left-[-140px] md:hidden">
         <Image
-          src={"https://i.postimg.cc/LXzvrKT4/roundedrect1.png"}
+          src={
+            "https://res.cloudinary.com/dtr4vo1dy/image/upload/v1742566659/roundedrect1_gomv4w.png"
+          }
           alt="mascot"
           width={350}
           height={100}
@@ -45,7 +49,9 @@ const HeroLander = () => {
       </div>
       <div className="absolute bottom-0 left-[39%] hidden md:block">
         <Image
-          src={"https://i.postimg.cc/4yPPx6qr/roundedrect2.png"}
+          src={
+            "https://res.cloudinary.com/dtr4vo1dy/image/upload/v1742566659/roundedrect2_jxg4iu.png"
+          }
           alt="mascot"
           width={500}
           height={175}
@@ -53,7 +59,9 @@ const HeroLander = () => {
       </div>
       <div className="absolute bottom-71 right-[26%] hidden md:block">
         <Image
-          src={"https://i.postimg.cc/m2ZV6nFR/roundedrect3.png"}
+          src={
+            "https://res.cloudinary.com/dtr4vo1dy/image/upload/v1742566659/roundedrect3_h6gjvc.png"
+          }
           alt="mascot"
           width={350}
           height={100}
@@ -61,7 +69,9 @@ const HeroLander = () => {
       </div>
       <div className="absolute bottom-0 right-0   md:bottom-20 md:right-0  md:block">
         <Image
-          src={"https://i.postimg.cc/Pr6KGMmD/roundedrect4.png"}
+          src={
+            "https://res.cloudinary.com/dtr4vo1dy/image/upload/v1742566659/roundedrect4_nmwu5q.png"
+          }
           alt="mascot"
           width={500}
           height={175}
@@ -69,7 +79,9 @@ const HeroLander = () => {
       </div>
       <div className="absolute bottom-0 right-0">
         <Image
-          src={"https://i.postimg.cc/Dy5pvhK8/mascot.png"}
+          src={
+            "https://res.cloudinary.com/dtr4vo1dy/image/upload/v1742566659/mascot_to157e.png"
+          }
           alt="mascot"
           width={350}
           height={350}
