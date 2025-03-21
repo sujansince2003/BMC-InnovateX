@@ -49,10 +49,12 @@ export const metadata: Metadata = {
     title: "BMC InnovateX - National Hackathon",
     description:
       "BMC InnovateX is a national hackathon that invites tech enthusiasts to showcase their skills and innovate for the future.",
-    images: ["/innovatexOg.png"],
+    images: [
+      "https://res.cloudinary.com/dtr4vo1dy/image/upload/v1742567539/innovatexOg_xffyze.png",
+    ],
   },
   icons: {
-    icon: "/favicon.svg",
+    icon: "https://res.cloudinary.com/dtr4vo1dy/image/upload/v1742567539/favicon_wqflub.svg",
   },
   manifest: "/site.webmanifest",
 };
@@ -63,8 +65,15 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <link rel="icon" href="/favicon.svg" sizes="any" />
-        <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+        <link
+          rel="icon"
+          href="https://res.cloudinary.com/dtr4vo1dy/image/upload/v1742567539/favicon_wqflub.svg"
+          sizes="any"
+        />
+        <link
+          rel="apple-touch-icon"
+          href="https://res.cloudinary.com/dtr4vo1dy/image/upload/v1742567538/apple-touch-icon_qexcfm.png"
+        />
         <meta name="theme-color" content="#000000" />
       </head>
       <body className={`${poppins.className} antialiased`}>
