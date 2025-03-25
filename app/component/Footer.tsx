@@ -1,6 +1,16 @@
 import React from "react";
 import { Github, Linkedin, Facebook, Instagram } from "lucide-react";
+import Link from "next/link";
 const Footer = () => {
+  const navItems = [
+    { name: "Home", slug: "/", active: true },
+    { name: "About", slug: "/about", active: true },
+    { name: "Schedule", slug: "/schedule", active: true },
+    { name: "Prizes", slug: "/prizes", active: true },
+    { name: "Sponsors", slug: "/sponsors", active: true },
+    { name: "Tracks", slug: "/tracks", active: true },
+    { name: "Contact", slug: "/contact", active: true },
+  ];
   return (
     <footer className="bg-[#008FAD] text-white py-12">
       <div className="container mx-auto px-4">
@@ -14,26 +24,13 @@ const Footer = () => {
           <div>
             <h4 className="font-semibold mb-4">Quick Links</h4>
             <ul className="space-y-2 text-gray-100">
-              <li>
-                <a href="#" className="hover:text-white">
-                  About
-                </a>
-              </li>
-              <li>
-                <a href="#" className="hover:text-white">
-                  Schedule
-                </a>
-              </li>
-              <li>
-                <a href="#" className="hover:text-white">
-                  FAQs
-                </a>
-              </li>
-              <li>
-                <a href="#" className="hover:text-white">
-                  Contact
-                </a>
-              </li>
+              {navItems.map((item, i) => (
+                <li key={i}>
+                  <Link href={item.slug} className="hover:text-white">
+                    {item.name}
+                  </Link>
+                </li>
+              ))}
             </ul>
           </div>
           <div>
