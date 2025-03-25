@@ -10,7 +10,7 @@ const KeyInfo = () => {
           <InfoCard
             icon={<Calendar className="w-8 h-8 text-[#0A9AAB]" />}
             title="Date"
-            value="TBA"
+            value="24 - 26 Falgun"
           />
           <InfoCard
             icon={<Clock className="w-8 h-8 text-[#0A9AAB]" />}
@@ -20,12 +20,12 @@ const KeyInfo = () => {
           <InfoCard
             icon={<Users className="w-8 h-8 text-[#0A9AAB]" />}
             title="Participants"
-            value="TBA"
+            value="60+"
           />
           <InfoCard
             icon={<Trophy className="w-8 h-8 text-[#0A9AAB]" />}
             title="Prizes"
-            value="TBA"
+            value="1,00,000+"
           />
         </div>
       </div>
@@ -46,7 +46,7 @@ function InfoCard({
 }) {
   return (
     <div className="bg-white rounded-xl p-6 shadow-md transform transition-all duration-300 hover:scale-105 hover:shadow-[0_0_15px_rgba(10,154,171,0.3)] border border-gray-100">
-      <div className="flex items-center space-x-4">
+      <div className="flex items-center h-full space-x-4">
         <div className="bg-gray-50 p-3 rounded-lg">{icon}</div>
         <div>
           <h3 className="text-gray-700 font-medium">{title}</h3>
