@@ -1,4 +1,15 @@
-import { Brain, Globe, Globe2 } from "lucide-react";
+import type React from "react";
+import {
+  Brain,
+  Globe2,
+  BookOpen,
+  Heart,
+  Plane,
+  Building2,
+  Wallet,
+  Leaf,
+  Link,
+} from "lucide-react";
 
 export default function HackathonTracks() {
   return (
@@ -9,7 +20,7 @@ export default function HackathonTracks() {
             Hackathon Tracks
           </h1>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 py-16">
+          <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-6 py-16">
             <TrackCard
               icon={
                 <Brain className="w-12 h-12 dark:text-[#0A9AAB] text-[#0A9AAB]" />
@@ -19,10 +30,52 @@ export default function HackathonTracks() {
             />
             <TrackCard
               icon={
-                <Globe className="w-12 h-12 dark:text-[#0A9AAB] text-[#0A9AAB]" />
+                <BookOpen className="w-12 h-12 dark:text-[#0A9AAB] text-[#0A9AAB]" />
               }
-              title="Web3"
-              description="Create decentralized applications and blockchain solutions."
+              title="Ed-tech"
+              description="Create solutions that revolutionize learning and education technology."
+            />
+            <TrackCard
+              icon={
+                <Heart className="w-12 h-12 dark:text-[#0A9AAB] text-[#0A9AAB]" />
+              }
+              title="Health & Wellness"
+              description="Develop applications that improve health outcomes and promote wellness."
+            />
+            <TrackCard
+              icon={
+                <Plane className="w-12 h-12 dark:text-[#0A9AAB] text-[#0A9AAB]" />
+              }
+              title="Tourism"
+              description="Build innovative solutions to enhance travel experiences and tourism services."
+            />
+            <TrackCard
+              icon={
+                <Building2 className="w-12 h-12 dark:text-[#0A9AAB] text-[#0A9AAB]" />
+              }
+              title="E-Governance"
+              description="Create platforms that improve government services and citizen engagement."
+            />
+            <TrackCard
+              icon={
+                <Wallet className="w-12 h-12 dark:text-[#0A9AAB] text-[#0A9AAB]" />
+              }
+              title="Fin-Tech"
+              description="Develop innovative financial technology solutions and services."
+            />
+            <TrackCard
+              icon={
+                <Leaf className="w-12 h-12 dark:text-[#0A9AAB] text-[#0A9AAB]" />
+              }
+              title="Agri-Tech"
+              description="Build solutions that address agricultural challenges and improve farming."
+            />
+            <TrackCard
+              icon={
+                <Link className="w-12 h-12 dark:text-[#0A9AAB] text-[#0A9AAB]" />
+              }
+              title="Blockchain"
+              description="Create decentralized applications and blockchain-based solutions."
             />
             <TrackCard
               icon={
