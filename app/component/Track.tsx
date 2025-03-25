@@ -48,7 +48,7 @@ function TrackCard({
   description: string;
 }) {
   return (
-    <div className="rounded-lg p-8 bg-gray-100 transition-colors duration-300 hover:shadow-lg">
+    <div className="rounded-lg p-8 bg-[#f7f7f7] transition-colors duration-300 hover:shadow-lg">
       <div className="flex flex-col items-center text-center">
         <div className="mb-4">{icon}</div>
         <h2 className="text-2xl font-bold mb-3  text-gray-800">{title}</h2>
