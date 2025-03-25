@@ -1,7 +1,7 @@
 "use client";
 import Image from "next/image";
 
-export default function ModernSponsors() {
+export default function Sponsors() {
   return (
     <section className="py-20 bg-gradient-to-b from-white to-gray-50 overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
