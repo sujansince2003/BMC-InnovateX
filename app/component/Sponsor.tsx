@@ -25,22 +25,16 @@ export default function ModernSponsors() {
         <div className="mb-20">
           <div className="text-center mb-8">
             <h3 className="inline-block text-xl font-semibold text-gray-700 px-6 py-2 bg-white rounded-full shadow-sm border border-gray-100">
-              Title Sponsor
+              <span className="text-primary">Title</span> Sponsor
             </h3>
           </div>
-          <div className="flex justify-center">
-            <div className="w-full max-w-lg p-10 bg-white rounded-2xl shadow-xl transform transition-all duration-300 hover:scale-105 hover:shadow-2xl border border-gray-100 relative group">
-              <div className="absolute inset-0 bg-gradient-to-r from-[#0A9AAB]/10 via-transparent to-[#0A9AAB]/10 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-700"></div>
-              <div className="flex justify-center items-center h-40 relative">
-                <Image
-                  src="/assets/logo.png"
-                  alt="Title Sponsor"
-                  width={300}
-                  height={150}
-                  className="object-contain relative z-10"
-                />
-              </div>
-            </div>
+          <div className="flex gap-8 mx-auto">
+            <SponsorCard
+              title="CSIT Association of BMC"
+              description="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto dolorum ipsam ipsa ea, nihil exercitationem ut error mollitia quas dolor! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem quasi fugit quam deleniti omnis nulla suscipit cupiditate cumque, et adipisici. Voluptatem quasi fugit quam deleniti omnis nulla suscipit cupiditate cumque, et adipisici elit. Voluptatem quasi fugit quam deleniti omnis nulla suscipit cupiditate cumque, et nesciunt.ng elit. Voluptatem quasi fugit quam deleniti omnis nulla suscipit cupiditate cumque, et adipisici. Voluptatem quasi fugit quam deleniti omnis nulla suscipit cupiditate cumque, et nesciunt."
+              url="#"
+              clamp={6}
+            />
           </div>
         </div>
 
@@ -52,8 +46,18 @@ export default function ModernSponsors() {
             </h3>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <SponsorCard level="gold" />
-            <SponsorCard level="gold" />
+            <SponsorCard
+              title="CSIT Association of BMC"
+              description="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto dolorum ipsam ipsa ea, nihil exercitationem ut error mollitia quas dolor! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem quasi fugit quam deleniti omnis nulla suscipit cupiditate cumque, et adipisici. Voluptatem quasi fugit quam deleniti omnis nulla suscipit cupiditate cumque, et adipisici elit. Voluptatem quasi fugit quam deleniti omnis nulla suscipit cupiditate cumque, et nesciunt.ng elit. Voluptatem quasi fugit quam deleniti omnis nulla suscipit cupiditate cumque, et adipisici. Voluptatem quasi fugit quam deleniti omnis nulla suscipit cupiditate cumque, et nesciunt."
+              url="#"
+              clamp={3}
+            />{" "}
+            <SponsorCard
+              title="CSIT Association of BMC"
+              description="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto dolorum ipsam ipsa ea, nihil exercitationem ut error mollitia quas dolor! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem quasi fugit quam deleniti omnis nulla suscipit cupiditate cumque, et adipisici. Voluptatem quasi fugit quam deleniti omnis nulla suscipit cupiditate cumque, et adipisici elit. Voluptatem quasi fugit quam deleniti omnis nulla suscipit cupiditate cumque, et nesciunt.ng elit. Voluptatem quasi fugit quam deleniti omnis nulla suscipit cupiditate cumque, et adipisici. Voluptatem quasi fugit quam deleniti omnis nulla suscipit cupiditate cumque, et nesciunt."
+              url="#"
+              clamp={3}
+            />
           </div>
         </div>
 
@@ -61,13 +65,28 @@ export default function ModernSponsors() {
         <div className="mb-16">
           <div className="text-center mb-8">
             <h3 className="inline-block text-xl font-semibold text-gray-700 px-6 py-2 bg-white rounded-full shadow-sm border border-gray-100">
-              <span className="text-[#B4B9C7]">Silver</span> Sponsors
+              <span className="text-primary">Silver</span> Sponsors
             </h3>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
-            <SponsorCard level="silver" />
-            <SponsorCard level="silver" />
-            <SponsorCard level="silver" />
+            <SponsorCard
+              title="CSIT Association of BMC"
+              description="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto dolorum ipsam ipsa ea, nihil exercitationem ut error mollitia quas dolor! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem quasi fugit quam deleniti omnis nulla suscipit cupiditate cumque, et adipisici. Voluptatem quasi fugit quam deleniti omnis nulla suscipit cupiditate cumque, et adipisici elit. Voluptatem quasi fugit quam deleniti omnis nulla suscipit cupiditate cumque, et nesciunt.ng elit. Voluptatem quasi fugit quam deleniti omnis nulla suscipit cupiditate cumque, et adipisici. Voluptatem quasi fugit quam deleniti omnis nulla suscipit cupiditate cumque, et nesciunt."
+              url="#"
+              clamp={3}
+            />{" "}
+            <SponsorCard
+              title="CSIT Association of BMC"
+              description="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto dolorum ipsam ipsa ea, nihil exercitationem ut error mollitia quas dolor! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem quasi fugit quam deleniti omnis nulla suscipit cupiditate cumque, et adipisici. Voluptatem quasi fugit quam deleniti omnis nulla suscipit cupiditate cumque, et adipisici elit. Voluptatem quasi fugit quam deleniti omnis nulla suscipit cupiditate cumque, et nesciunt.ng elit. Voluptatem quasi fugit quam deleniti omnis nulla suscipit cupiditate cumque, et adipisici. Voluptatem quasi fugit quam deleniti omnis nulla suscipit cupiditate cumque, et nesciunt."
+              url="#"
+              clamp={3}
+            />{" "}
+            <SponsorCard
+              title="CSIT Association of BMC"
+              description="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto dolorum ipsam ipsa ea, nihil exercitationem ut error mollitia quas dolor! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem quasi fugit quam deleniti omnis nulla suscipit cupiditate cumque, et adipisici. Voluptatem quasi fugit quam deleniti omnis nulla suscipit cupiditate cumque, et adipisici elit. Voluptatem quasi fugit quam deleniti omnis nulla suscipit cupiditate cumque, et nesciunt.ng elit. Voluptatem quasi fugit quam deleniti omnis nulla suscipit cupiditate cumque, et adipisici. Voluptatem quasi fugit quam deleniti omnis nulla suscipit cupiditate cumque, et nesciunt."
+              url="#"
+              clamp={3}
+            />
           </div>
         </div>
 
@@ -78,52 +97,25 @@ export default function ModernSponsors() {
               <span className="text-[#FF8A00]">Bronze</span> Sponsors
             </h3>
           </div>
-          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-5">
-            <SponsorCard level="bronze" />
-            <SponsorCard level="bronze" />
-            <SponsorCard level="bronze" />
-            <SponsorCard level="bronze" />
-          </div>
-        </div>
-
-        {/* Supported By */}
-        <div className="mb-16">
-          <div className="text-center mb-8">
-            <h3 className="inline-block text-xl font-semibold text-gray-700 px-6 py-2 bg-white rounded-full shadow-sm border border-gray-100">
-              Supported By
-            </h3>
-          </div>
-          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-5">
-            <SponsorCard level="supported" />
-            <SponsorCard level="supported" />
-            <SponsorCard level="supported" />
-            <SponsorCard level="supported" />
-          </div>
-        </div>
-
-        {/* Other Partners */}
-        <div>
-          <div className="text-center mb-8">
-            <h3 className="inline-block text-xl font-semibold text-gray-700 px-6 py-2 bg-white rounded-full shadow-sm border border-gray-100">
-              Other Partners
-            </h3>
-          </div>
-          <div className="flex flex-wrap justify-center gap-6">
-            {[1, 2, 3, 4, 5, 6].map((i) => (
-              <div
-                key={i}
-                className="w-32 h-32 bg-white rounded-lg shadow-md p-4 flex items-center justify-center border border-gray-100 transition-all duration-300 hover:shadow-lg hover:scale-105 group relative"
-              >
-                <div className="absolute inset-0 bg-gradient-to-r from-[#0A9AAB]/5 via-transparent to-[#0A9AAB]/5 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-                <Image
-                  src="/assets/logo.png"
-                  alt={`Partner ${i}`}
-                  width={80}
-                  height={80}
-                  className="object-contain relative z-10"
-                />
-              </div>
-            ))}
+          <div className="grid grid-cols-2 md:grid-cols-3 gap-5">
+            <SponsorCard
+              title="CSIT Association of BMC"
+              description="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto dolorum ipsam ipsa ea, nihil exercitationem ut error mollitia quas dolor! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem quasi fugit quam deleniti omnis nulla suscipit cupiditate cumque, et adipisici. Voluptatem quasi fugit quam deleniti omnis nulla suscipit cupiditate cumque, et adipisici elit. Voluptatem quasi fugit quam deleniti omnis nulla suscipit cupiditate cumque, et nesciunt.ng elit. Voluptatem quasi fugit quam deleniti omnis nulla suscipit cupiditate cumque, et adipisici. Voluptatem quasi fugit quam deleniti omnis nulla suscipit cupiditate cumque, et nesciunt."
+              url="#"
+              clamp={3}
+            />{" "}
+            <SponsorCard
+              title="CSIT Association of BMC"
+              description="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto dolorum ipsam ipsa ea, nihil exercitationem ut error mollitia quas dolor! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem quasi fugit quam deleniti omnis nulla suscipit cupiditate cumque, et adipisici. Voluptatem quasi fugit quam deleniti omnis nulla suscipit cupiditate cumque, et adipisici elit. Voluptatem quasi fugit quam deleniti omnis nulla suscipit cupiditate cumque, et nesciunt.ng elit. Voluptatem quasi fugit quam deleniti omnis nulla suscipit cupiditate cumque, et adipisici. Voluptatem quasi fugit quam deleniti omnis nulla suscipit cupiditate cumque, et nesciunt."
+              url="#"
+              clamp={3}
+            />{" "}
+            <SponsorCard
+              title="CSIT Association of BMC"
+              description="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto dolorum ipsam ipsa ea, nihil exercitationem ut error mollitia quas dolor! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem quasi fugit quam deleniti omnis nulla suscipit cupiditate cumque, et adipisici. Voluptatem quasi fugit quam deleniti omnis nulla suscipit cupiditate cumque, et adipisici elit. Voluptatem quasi fugit quam deleniti omnis nulla suscipit cupiditate cumque, et nesciunt.ng elit. Voluptatem quasi fugit quam deleniti omnis nulla suscipit cupiditate cumque, et adipisici. Voluptatem quasi fugit quam deleniti omnis nulla suscipit cupiditate cumque, et nesciunt."
+              url="#"
+              clamp={3}
+            />
           </div>
         </div>
       </div>
@@ -132,64 +124,36 @@ export default function ModernSponsors() {
 }
 
 function SponsorCard({
-  level,
+  title,
+  description,
+  url,
+  clamp,
+  logo,
 }: {
-  level: "gold" | "silver" | "bronze" | "supported";
+  title: string;
+  clamp: number;
+  description: string;
+  url: string;
+  logo?: string;
 }) {
-  const getStyles = () => {
-    switch (level) {
-      case "gold":
-        return {
-          containerClasses:
-            "p-8 bg-white rounded-xl shadow-lg border border-gray-100 hover:border-[#FFB800]/30 group",
-          glowColor: "from-[#FFB800]/10 via-transparent to-[#FFB800]/10",
-          height: 120,
-          width: 240,
-        };
-      case "silver":
-        return {
-          containerClasses:
-            "p-6 bg-white rounded-xl shadow-md border border-gray-100 hover:border-[#B4B9C7]/30 group",
-          glowColor: "from-[#B4B9C7]/10 via-transparent to-[#B4B9C7]/10",
-          height: 100,
-          width: 200,
-        };
-      case "bronze":
-        return {
-          containerClasses:
-            "p-5 bg-white rounded-lg shadow-sm border border-gray-100 hover:border-[#FF8A00]/30 group",
-          glowColor: "from-[#FF8A00]/10 via-transparent to-[#FF8A00]/10",
-          height: 80,
-          width: 160,
-        };
-      case "supported":
-      default:
-        return {
-          containerClasses:
-            "p-5 bg-white rounded-lg shadow-sm border border-gray-100 hover:border-[#0A9AAB]/30 group",
-          glowColor: "from-[#0A9AAB]/10 via-transparent to-[#0A9AAB]/10",
-          height: 80,
-          width: 160,
-        };
-    }
-  };
-
-  const { containerClasses, glowColor, height, width } = getStyles();
-
   return (
-    <div
-      className={`${containerClasses} flex items-center justify-center transform transition-all duration-300 hover:scale-105 hover:shadow-xl relative`}
-    >
-      <div
-        className={`absolute inset-0 bg-gradient-to-r ${glowColor} rounded-xl opacity-0 group-hover:opacity-100 transition-opacity duration-700`}
-      ></div>
+    <div className="bg-gray-50 p-10 rounded-xl w-full">
       <Image
-        src="/assets/logo.png"
-        alt={`${level} sponsor`}
-        width={width}
-        height={height}
-        className="object-contain relative z-10"
+        width={200}
+        height={200}
+        src={
+          logo
+            ? logo
+            : "https://images.unsplash.com/photo-1611162617474-5b21e879e113?w=400&h=200&fit=crop&q=80"
+        }
+        alt="TechCorp"
+        className="h-4w-40 w-40 object-contain border border-primary rounded-md mb-4"
       />
+      <h3 className="text-xl font-semibold mb-2">{title}</h3>
+      <p className={`text-gray-600 mb-4 line-clamp-${clamp} `}>{description}</p>
+      <a href={url} className="text-primary underline flex items-center">
+        Visit Website
+      </a>
     </div>
   );
 }
