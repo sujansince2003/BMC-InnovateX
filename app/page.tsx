@@ -3,7 +3,6 @@ import HeroLander from "./component/HeroLander";
 import KeyInfo from "./component/KeyInfo";
 import Prizes from "./component/Prizes";
 import Sponsor from "./component/Sponsor";
-import Timeline from "./component/Timeline";
 import Track from "./component/Track";
 
 export default function Home() {
@@ -11,7 +10,6 @@ export default function Home() {
     <>
       <HeroLander />
       <KeyInfo />
-      <Timeline />
       <Track />
       <Prizes />
       <Sponsor />

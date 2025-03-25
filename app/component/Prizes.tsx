@@ -17,24 +17,9 @@ export default function EnhancedPrizesV2() {
 
         {/* Main Prizes */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
-          <MainPrizeCard
-            value="₹50,000"
-            label="First Prize"
-            color="#FFB800"
-            position="1"
-          />
-          <MainPrizeCard
-            value="₹30,000"
-            label="Second Prize"
-            color="#B4B9C7"
-            position="2"
-          />
-          <MainPrizeCard
-            value="₹15,000"
-            label="Third Prize"
-            color="#FF8A00"
-            position="3"
-          />
+          <MainPrizeCard value="₹50,000" label="First Prize" position="1" />
+          <MainPrizeCard value="₹30,000" label="Second Prize" position="2" />
+          <MainPrizeCard value="₹15,000" label="Third Prize" position="3" />
         </div>
 
         {/* Category Heading */}
@@ -42,16 +27,16 @@ export default function EnhancedPrizesV2() {
           <h3 className="text-2xl font-bold text-gray-800 mb-2">
             Special Category Winners
           </h3>
-          <p className="text-gray-600">Each category winner receives ₹5,000</p>
+          <p className="text-gray-600 max-w-2xl mx-auto">
+            Get a chance to win special prizes in our hackathon. Winners will
+            receive cash prizes and exclusive opportunities.
+          </p>
         </div>
 
         {/* Category Prizes */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6">
-          <CategoryCard category="Best AI/ML Solution" />
-          <CategoryCard category="Best Web3 Project" />
-          <CategoryCard category="Most Innovative Idea" />
-          <CategoryCard category="Best UI/UX Design" />
-          <CategoryCard category="Best Social Impact" />
+        <div className="flex flex-wrap justify-center items-center gap-6">
+          <CategoryCard value="₹7,500" category="Best AI/ML Solution" />
+          <CategoryCard value="₹5,000" category="Best Social Impact" />
         </div>
       </div>
     </section>
@@ -61,23 +46,21 @@ export default function EnhancedPrizesV2() {
 interface MainPrizeCardProps {
   value: string;
   label: string;
-  color: string;
   position: string;
 }
 
-function MainPrizeCard({ value, label, color, position }: MainPrizeCardProps) {
+function MainPrizeCard({ value, label, position }: MainPrizeCardProps) {
   return (
     <div
-      className={`rounded-xl p-8 flex flex-col items-center justify-center shadow-lg border-2 transition-all duration-300 hover:shadow-xl hover:scale-105 relative overflow-hidden h-[260px]`}
+      className={`rounded-xl p-8 flex flex-col items-center justify-center shadow-lg  transition-all duration-300 hover:shadow-xl hover:scale-105 relative overflow-hidden h-[260px] border-2 border-blue-100 hover:border-primary`}
       style={{
-        borderColor: color,
-        background: `linear-gradient(to bottom, ${color}10, white)`,
+        background: `linear-gradient(to bottom, #008fad10, white)`,
       }}
     >
       <div className="absolute top-0 right-0 w-20 h-20 bg-gray-50 opacity-50 rounded-full -mt-10 -mr-10"></div>
       <div className="absolute bottom-0 left-0 w-16 h-16 bg-gray-50 opacity-50 rounded-full -mb-8 -ml-8"></div>
 
-      <div className="mb-6" style={{ color: color }}>
+      <div className="mb-6 text-primary">
         <GiftIcon />
       </div>
       <h3 className="text-3xl font-bold text-gray-800 mb-2">{value}</h3>
@@ -85,8 +68,7 @@ function MainPrizeCard({ value, label, color, position }: MainPrizeCardProps) {
 
       <div className="absolute top-4 right-4">
         <div
-          className={`w-8 h-8 rounded-full flex items-center justify-center text-white font-bold`}
-          style={{ backgroundColor: color }}
+          className={`w-8 h-8 rounded-full flex items-center justify-center text-white font-bold bg-primary`}
         >
           {position}
         </div>
@@ -97,16 +79,25 @@ function MainPrizeCard({ value, label, color, position }: MainPrizeCardProps) {
 
 interface CategoryCardProps {
   category: string;
+  value: string;
 }
 
-function CategoryCard({ category }: CategoryCardProps) {
+function CategoryCard({ category, value }: CategoryCardProps) {
   return (
-    <div className="bg-white rounded-xl p-6 shadow-md border border-gray-100 transition-all duration-300 hover:shadow-lg hover:border-[#0A9AAB] flex flex-col items-center text-center">
-      <div className="mb-4 text-[#0A9AAB]">
-        <Award className="w-10 h-10" />
+    <div
+      className={`rounded-xl p-8 flex flex-col items-center justify-center shadow-lg  transition-all duration-300 hover:shadow-xl hover:scale-105 relative overflow-hidden h-[260px] border-2 border-blue-100 hover:border-primary`}
+      style={{
+        background: `linear-gradient(to bottom, #008fad10, white)`,
+      }}
+    >
+      <div className="absolute top-0 right-0 w-20 h-20 bg-gray-50 opacity-50 rounded-full -mt-10 -mr-10"></div>
+      <div className="absolute bottom-0 left-0 w-16 h-16 bg-gray-50 opacity-50 rounded-full -mb-8 -ml-8"></div>
+
+      <div className="mb-6 text-primary">
+        <Award className="h-14 w-14" />
       </div>
-      <h4 className="font-semibold text-gray-800">{category}</h4>
-      <p className="text-[#0A9AAB] font-bold mt-2">₹5,000</p>
+      <h3 className="text-3xl font-bold text-gray-800 mb-2">{category}</h3>
+      <p className="text-gray-600 font-semibold text-lg">{value}</p>
     </div>
   );
 }

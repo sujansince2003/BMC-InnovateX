@@ -2,7 +2,7 @@ import { Brain, Globe, Globe2 } from "lucide-react";
 
 export default function HackathonTracks() {
   return (
-    <div className="bg-[#eeeeee] ">
+    <div className="bg-[#f3f2f2] ">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 transition-colors duration-300 py-16">
         <div className="container mx-auto">
           <h1 className="text-4xl font-bold text-center text-gray-800">
