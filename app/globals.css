@@ -125,7 +125,7 @@
   font-size: 150px;
   font-weight: 700;
   stroke-width: 3;
-  animation: textAnimate 5s infinite alternate;
+  animation: textAnimate 2s infinite alternate;
 }
 
 @media screen and (max-width: 640px) {

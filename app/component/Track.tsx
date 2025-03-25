@@ -16,7 +16,7 @@ export default function HackathonTracks() {
     <div className="bg-[#f3f2f2] ">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 transition-colors duration-300 py-16">
         <div className="container mx-auto">
-          <h1 className="text-4xl font-bold text-center text-gray-800">
+          <h1 className="text-3xl md:text-4xl font-bold text-center text-gray-800">
             Hackathon Tracks
           </h1>
 
@@ -104,7 +104,9 @@ function TrackCard({
     <div className="rounded-lg p-8 bg-[#f7f7f7] transition-colors duration-300 hover:shadow-lg">
       <div className="flex flex-col items-center text-center">
         <div className="mb-4">{icon}</div>
-        <h2 className="text-2xl font-bold mb-3  text-gray-800">{title}</h2>
+        <h2 className="text-xl lg:text-2xl font-bold mb-3  text-gray-800">
+          {title}
+        </h2>
         <p className=" text-gray-600">{description}</p>
       </div>
     </div>

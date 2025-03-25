@@ -4,10 +4,9 @@ import Sponsors from "../component/Sponsor";
 
 export default function SponsorsPage() {
   return (
-    <div>
+    <div className="bg-[#f4f4f4]">
       <div className="container mx-auto px-4 py-16">
         <Sponsors />
-
         {/* Become a Sponsor */}
         <div className="max-w-4xl mt-10 mx-auto">
           <div className="p-8 rounded-xl text-center">
