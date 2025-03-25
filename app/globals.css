@@ -118,3 +118,45 @@
     @apply bg-background text-foreground;
   }
 }
+
+.svg-x .animated-text {
+  letter-spacing: 10px;
+  stroke: white;
+  font-size: 150px;
+  font-weight: 700;
+  stroke-width: 3;
+  animation: textAnimate 5s infinite alternate;
+}
+
+@media screen and (max-width: 640px) {
+  .svg-x .animated-text {
+    font-size: 48px;
+    stroke-width: 1;
+  }
+}
+@media screen and (min-width: 640px) {
+  .svg-x .animated-text {
+    font-size: 48px;
+    stroke-width: 2;
+  }
+}
+@media screen and (min-width: 768px) {
+  .svg-x .animated-text {
+    font-size: 100px;
+    stroke-width: 2;
+  }
+}
+
+@keyframes textAnimate {
+  0% {
+    stroke-dasharray: 0 50%;
+    stroke-dashoffset: 20%;
+    fill: hsl(0, 0%, 100%);
+  }
+
+  100% {
+    stroke-dasharray: 50% 0;
+    stroke-dashoffstet: -20%;
+    fill: hsla(189, 68%, 75%, 0%);
+  }
+}
