@@ -1,29 +1,12 @@
 import React from "react";
 import { Building, Target, Trophy, Users } from "lucide-react";
 import Image from "next/image";
-const benefits = [
-  "Helps to promote innovation and motivate developers.",
-  "Helps in skill development by providing a competitive environment.",
-  "Helps in team building by working in a collaborative concept.",
-  "Provides networking opportunities by being in the room with skilled individuals and entrepreneurs.",
-  "Provides environment to encourage prototype development.",
-  "Builds and helps indulge in community engagement.",
-  "Recognition of excellence with innovation awards.",
-  "Offers career guidance from industry leaders.",
-  "Increases community-companies bond and interaction.",
-  "Empowers individuals for tech career pursuit.",
-];
 
 export default function AboutPage() {
   return (
-    <div className="min-h-screen mt-10 bg-white">
-      <div className="container mx-auto px-4 py-16">
-        <h1 className="text-4xl font-bold text-center mb-16">
-          About BMC InnovateX
-        </h1>
-
-        {/* What is BMC InnovateX */}
-        <div className="max-w-4xl mx-auto mb-16">
+    <div className="max-w-6xl m-auto min-h-screen mt-10 bg-white">
+      <div className=" px-4 py-16">
+        <div className=" mb-16">
           <h2 className="text-2xl font-semibold mb-6">
             What is BMC InnovateX?
           </h2>
@@ -38,14 +21,6 @@ export default function AboutPage() {
             as software development, hardware engineering, data analysis, social
             issues, or business innovation.
           </p>
-          <h2 className="mb-2 text-gray-600 text-lg font-semibold">
-            Event Objectives:
-          </h2>
-          <ul className="mb-8 space-y-1 text-gray-600  list-disc list-inside ">
-            {benefits.map((benefit, index) => (
-              <li key={index}>{benefit}</li>
-            ))}
-          </ul>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <Image
               width={400}
@@ -64,12 +39,18 @@ export default function AboutPage() {
           </div>
         </div>
 
+        <div className="flex items-center justify-center mb-8 border-t-1 border-primary pt-10">
+          <Building className="h-8 w-8 text-primary mr-3" />
+          <h2 className="text-2xl font-semibold">
+            Organizing Body: CSIT Association of BMC
+          </h2>
+        </div>
         {/* Mission & Vision */}
         <div className="flex justify-center">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mb-16 max-w-4xl">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mb-16">
             <div className="bg-gray-50 p-8 rounded-xl">
               <div className="flex items-center mb-4">
-                <Target className="h-8 w-8 text-indigo-600 mr-3" />
+                <Target className="h-8 w-8 text-primary mr-3" />
                 <h2 className="text-2xl font-semibold">Our Mission</h2>
               </div>
               <p className="text-gray-600 leading-relaxed">
@@ -81,7 +62,7 @@ export default function AboutPage() {
             </div>
             <div className="bg-gray-50 p-8 rounded-xl">
               <div className="flex items-center mb-4">
-                <Trophy className="h-8 w-8 text-indigo-600 mr-3" />
+                <Trophy className="h-8 w-8 text-primary mr-3" />
                 <h2 className="text-2xl font-semibold">Our Vision</h2>
               </div>
               <p className="text-gray-600 leading-relaxed">
@@ -96,13 +77,7 @@ export default function AboutPage() {
 
         {/* Organizing Body */}
         <div className="mb-16">
-          <div className="flex items-center justify-center mb-8">
-            <Building className="h-8 w-8 text-indigo-600 mr-3" />
-            <h2 className="text-2xl font-semibold">
-              Organizing Body: CSIT Association of BMC
-            </h2>
-          </div>
-          <div className="bg-gray-50 p-8 rounded-xl max-w-4xl mx-auto">
+          <div className="bg-gray-50 p-8 rounded-xl mx-auto">
             <p className="text-gray-600 leading-relaxed mb-6">
               The Computer Science and Information Technology Association (CSIT)
               of Brihan Mumbai College is a student-run organization dedicated
@@ -114,21 +89,15 @@ export default function AboutPage() {
             </p>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               <div className="text-center">
-                <div className="text-3xl font-bold text-indigo-600 mb-2">
-                  50+
-                </div>
+                <div className="text-3xl font-bold text-primary mb-2">50+</div>
                 <div className="text-gray-600">Events Organized</div>
               </div>
               <div className="text-center">
-                <div className="text-3xl font-bold text-indigo-600 mb-2">
-                  1000+
-                </div>
+                <div className="text-3xl font-bold text-primary mb-2">16+</div>
                 <div className="text-gray-600">Active Members</div>
               </div>
               <div className="text-center">
-                <div className="text-3xl font-bold text-indigo-600 mb-2">
-                  10+
-                </div>
+                <div className="text-3xl font-bold text-primary mb-2">10+</div>
                 <div className="text-gray-600">Years of Excellence</div>
               </div>
             </div>
@@ -138,12 +107,12 @@ export default function AboutPage() {
         {/* Previous Event Highlights */}
         <div>
           <div className="flex items-center justify-center mb-8">
-            <Users className="h-8 w-8 text-indigo-600 mr-3" />
+            <Users className="h-8 w-8 text-primary mr-3" />
             <h2 className="text-2xl font-semibold">
               Previous Event Highlights
             </h2>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mx-auto">
             <div className="bg-gray-50 p-6 rounded-xl text-center">
               <Image
                 width={200}
