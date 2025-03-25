@@ -15,6 +15,7 @@ export const navItems: NavItem[] = [
   { name: "Prizes", slug: "/prizes", active: true },
   { name: "Sponsors", slug: "/sponsors", active: true },
   { name: "Tracks", slug: "/tracks", active: true },
+  { name: "Contact", slug: "/contact", active: true },
 ];
 import React, { useState } from "react";
 import Link from "next/link";
