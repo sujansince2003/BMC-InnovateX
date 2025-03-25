@@ -1,3 +1,4 @@
+import { LeftDots, RightDots } from "@/components/custom/Dots";
 import Image from "next/image";
 
 const HeroLander = () => {
@@ -101,29 +102,3 @@ const HeroLander = () => {
 };
 
 export default HeroLander;
-
-function Dots() {
-  return (
-    <div className="md:h-2 md:w-2 h-1.5 w-1.5 rounded-full bg-white"></div>
-  );
-}
-
-function LeftDots() {
-  return (
-    <div className="grid w-12 grid-cols-3 gap-x-5 gap-y-3">
-      {Array.from({ length: 18 }).map((_, index) => (
-        <Dots key={index} />
-      ))}
-    </div>
-  );
-}
-
-function RightDots() {
-  return (
-    <div className="grid w-12 grid-cols-5 gap-x-6 gap-y-3">
-      {Array.from({ length: 18 }).map((_, index) => (
-        <Dots key={index} />
-      ))}
-    </div>
-  );
-}
