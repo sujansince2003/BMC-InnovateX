@@ -1,5 +1,5 @@
 import React from "react";
-import { Calendar, Clock } from "lucide-react";
+import { Calendar, Clock, GlobeIcon } from "lucide-react";
 
 export default function SchedulePage() {
   return (
@@ -10,7 +10,7 @@ export default function SchedulePage() {
         {/* Registration Timeline */}
         <div className="max-w-4xl mx-auto mb-16">
           <div className="flex items-center mb-8">
-            <Calendar className="h-8 w-8 text-indigo-600 mr-3" />
+            <Calendar className="h-8 w-8 text-primary mr-3" />
             <h2 className="text-2xl font-semibold">Registration Timeline</h2>
           </div>
           <div className="bg-gray-50 p-8 rounded-xl">
@@ -18,23 +18,8 @@ export default function SchedulePage() {
               <div className="flex items-start">
                 <div className="flex-shrink-0 w-32 font-semibold">TBA</div>
                 <div>
-                  <div className="font-semibold">
-                    Early Bird Registration Opens
-                  </div>
-                  <p className="text-gray-600">
-                    Special perks for early registrants
-                  </p>
-                </div>
-              </div>
-              <div className="flex items-start">
-                <div className="flex-shrink-0 w-32 font-semibold">TBA</div>
-                <div>
-                  <div className="font-semibold">
-                    Regular Registration Opens
-                  </div>
-                  <p className="text-gray-600">
-                    Standard registration period begins
-                  </p>
+                  <div className="font-semibold">Registration Opens</div>
+                  <p className="text-gray-600">Registration period begins.</p>
                 </div>
               </div>
               <div className="flex items-start">
@@ -42,7 +27,36 @@ export default function SchedulePage() {
                 <div>
                   <div className="font-semibold">Registration Closes</div>
                   <p className="text-gray-600">
-                    Last day to register for the hackathon
+                    Last day to register for the BMC InnovateX.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Online Round */}
+        <div className="max-w-4xl mx-auto mb-16">
+          <div className="flex items-center mb-8">
+            <GlobeIcon className="h-8 w-8 text-primary mr-3" />
+            <h2 className="text-2xl font-semibold">Online Schedule</h2>
+          </div>
+          <div className="bg-gray-50 p-8 rounded-xl">
+            <div className="space-y-6">
+              <div className="flex items-start">
+                <div className="flex-shrink-0 w-32 font-semibold">TBA</div>
+                <div>
+                  <div className="font-semibold">Online Round</div>
+                  <p className="text-gray-600">Selection of best 15 Teams.</p>
+                </div>
+              </div>
+              <div className="flex items-start">
+                <div className="flex-shrink-0 w-32 font-semibold">TBA</div>
+                <div>
+                  <div className="font-semibold">Reveled On-site Finalist</div>
+                  <p className="text-gray-600">
+                    The best 15 Teams will be invited for On-site round of BMC
+                    InnovateX
                   </p>
                 </div>
               </div>
@@ -53,14 +67,34 @@ export default function SchedulePage() {
         {/* Main Event Schedule */}
         <div className="max-w-4xl mx-auto">
           <div className="flex items-center mb-8">
-            <Clock className="h-8 w-8 text-indigo-600 mr-3" />
+            <Clock className="h-8 w-8 text-primary mr-3" />
             <h2 className="text-2xl font-semibold">Main Event Schedule</h2>
           </div>
 
           {/* Day 1 */}
           <div className="mb-12">
             <h3 className="text-xl font-semibold mb-6 bg-indigo-50 p-4 rounded-lg">
-              Day 1 -TBA
+              Day 0 - 23<sup>th</sup> Falgun
+            </h3>
+            <div className="space-y-6">
+              <div className="flex items-start bg-gray-50 p-4 rounded-lg">
+                <div className="flex-shrink-0 w-32 font-semibold">5:00 PM</div>
+                <div>
+                  <div className="font-semibold">
+                    Check-in for innovaters from !(Butwal){" "}
+                  </div>
+                  <p className="text-gray-600">
+                    Particiapnts outside Butwal(or Rupandehi district) can check
+                    in at the venue one day prior to the event day.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          {/* Day 1 */}
+          <div className="mb-12">
+            <h3 className="text-xl font-semibold mb-6 bg-indigo-50 p-4 rounded-lg">
+              Day 1 - 24<sup>th</sup> Falgun
             </h3>
             <div className="space-y-6">
               <div className="flex items-start bg-gray-50 p-4 rounded-lg">
@@ -73,7 +107,7 @@ export default function SchedulePage() {
                 </div>
               </div>
               <div className="flex items-start bg-gray-50 p-4 rounded-lg">
-                <div className="flex-shrink-0 w-32 font-semibold">10:00 AM</div>
+                <div className="flex-shrink-0 w-32 font-semibold">9:30 AM</div>
                 <div>
                   <div className="font-semibold">Opening Ceremony</div>
                   <p className="text-gray-600">
@@ -82,29 +116,11 @@ export default function SchedulePage() {
                 </div>
               </div>
               <div className="flex items-start bg-gray-50 p-4 rounded-lg">
-                <div className="flex-shrink-0 w-32 font-semibold">12:00 PM</div>
+                <div className="flex-shrink-0 w-32 font-semibold">10:00 AM</div>
                 <div>
                   <div className="font-semibold">Hacking Begins</div>
                   <p className="text-gray-600">
                     Start working on your projects
-                  </p>
-                </div>
-              </div>
-              <div className="flex items-start bg-gray-50 p-4 rounded-lg">
-                <div className="flex-shrink-0 w-32 font-semibold">2:00 PM</div>
-                <div>
-                  <div className="font-semibold">Workshop: API Integration</div>
-                  <p className="text-gray-600">
-                    Learn about integrating popular APIs into your project
-                  </p>
-                </div>
-              </div>
-              <div className="flex items-start bg-gray-50 p-4 rounded-lg">
-                <div className="flex-shrink-0 w-32 font-semibold">6:00 PM</div>
-                <div>
-                  <div className="font-semibold">Dinner & Networking</div>
-                  <p className="text-gray-600">
-                    Meet fellow participants and mentors
                   </p>
                 </div>
               </div>
@@ -114,33 +130,15 @@ export default function SchedulePage() {
           {/* Day 2 */}
           <div className="mb-12">
             <h3 className="text-xl font-semibold mb-6 bg-indigo-50 p-4 rounded-lg">
-              Day 2 - TBA
+              Day 2 - 25<sup>th</sup> Falgun
             </h3>
             <div className="space-y-6">
               <div className="flex items-start bg-gray-50 p-4 rounded-lg">
-                <div className="flex-shrink-0 w-32 font-semibold">10:00 AM</div>
+                <div className="flex-shrink-0 w-32 font-semibold">00:00 AM</div>
                 <div>
                   <div className="font-semibold">Mentorship Sessions Begin</div>
                   <p className="text-gray-600">
                     One-on-one guidance from industry experts
-                  </p>
-                </div>
-              </div>
-              <div className="flex items-start bg-gray-50 p-4 rounded-lg">
-                <div className="flex-shrink-0 w-32 font-semibold">2:00 PM</div>
-                <div>
-                  <div className="font-semibold">Workshop: Pitch Perfect</div>
-                  <p className="text-gray-600">
-                    Learn how to present your project effectively
-                  </p>
-                </div>
-              </div>
-              <div className="flex items-start bg-gray-50 p-4 rounded-lg">
-                <div className="flex-shrink-0 w-32 font-semibold">6:00 PM</div>
-                <div>
-                  <div className="font-semibold">Progress Check-in</div>
-                  <p className="text-gray-600">
-                    Share your progress with mentors
                   </p>
                 </div>
               </div>
@@ -150,11 +148,11 @@ export default function SchedulePage() {
           {/* Day 3 */}
           <div>
             <h3 className="text-xl font-semibold mb-6 bg-indigo-50 p-4 rounded-lg">
-              Day 3 - TBA
+              Day 3 - 26<sup>th</sup> Falgun
             </h3>
             <div className="space-y-6">
               <div className="flex items-start bg-gray-50 p-4 rounded-lg">
-                <div className="flex-shrink-0 w-32 font-semibold">11:00 AM</div>
+                <div className="flex-shrink-0 w-32 font-semibold">10:00 AM</div>
                 <div>
                   <div className="font-semibold">
                     Project Submission Deadline
@@ -164,21 +162,22 @@ export default function SchedulePage() {
                   </p>
                 </div>
               </div>
+            </div>
+          </div>
+
+          {/* Day 4 */}
+          <div>
+            <h3 className="text-xl font-semibold mb-6 bg-indigo-50 p-4 rounded-lg">
+              Day 4 - 27<sup>th</sup> Falgun
+            </h3>
+            <div className="space-y-6">
               <div className="flex items-start bg-gray-50 p-4 rounded-lg">
-                <div className="flex-shrink-0 w-32 font-semibold">1:00 PM</div>
+                <div className="flex-shrink-0 w-32 font-semibold">7:00 AM</div>
                 <div>
-                  <div className="font-semibold">Project Presentations</div>
+                  <div className="font-semibold">Check Out for !(Butwal)</div>
                   <p className="text-gray-600">
-                    Present your solution to the judges
-                  </p>
-                </div>
-              </div>
-              <div className="flex items-start bg-gray-50 p-4 rounded-lg">
-                <div className="flex-shrink-0 w-32 font-semibold">5:00 PM</div>
-                <div>
-                  <div className="font-semibold">Closing Ceremony</div>
-                  <p className="text-gray-600">
-                    Winners announcement and prize distribution
+                    Check out for participants outside Butwal(or Rupandehi
+                    district)
                   </p>
                 </div>
               </div>
