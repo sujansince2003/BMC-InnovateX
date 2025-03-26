@@ -4,7 +4,7 @@ import Link from "next/link";
 const Footer = () => {
   const navItems = [
     { name: "Home", slug: "/", active: true },
-    { name: "About", slug: "/about", active: true },
+    { name: "Organizer", slug: "/organizer", active: true },
     { name: "Schedule", slug: "/schedule", active: true },
     { name: "Prizes", slug: "/prizes", active: true },
     { name: "Sponsors", slug: "/sponsors", active: true },
@@ -18,7 +18,11 @@ const Footer = () => {
           <div>
             <h3 className="text-xl font-bold mb-4">Innovation Unleashed</h3>
             <p className="text-gray-100">
-              Join us for the biggest hackathon of 2025!
+              BMC InnovateX is a 48-hour hackathon organized by CSITABMC in
+              collaboration with Tilottama Municipality. The event brings
+              together innovators, developers, and problem-solvers to create
+              impactful tech solutions. Participants will compete to develop
+              prototypes, showcase their skills, and win exciting prizes.
             </p>
           </div>
           <div>

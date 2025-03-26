@@ -10,7 +10,7 @@ interface NavItem {
 
 export const navItems: NavItem[] = [
   { name: "Home", slug: "/", active: true },
-  { name: "About", slug: "/about", active: true },
+  { name: "Organizer", slug: "/organizer", active: true },
   { name: "Schedule", slug: "/schedule", active: true },
   { name: "Prizes", slug: "/prizes", active: true },
   { name: "Sponsors", slug: "/sponsors", active: true },

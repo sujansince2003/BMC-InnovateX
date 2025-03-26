@@ -13,6 +13,10 @@ const nextConfig: NextConfig = {
       },
       {
         protocol: "https",
+        hostname: "lmnstrirupgjxplzedki.supabase.co",
+      },
+      {
+        protocol: "https",
         hostname: "i.postimg.cc",
       },
       {
