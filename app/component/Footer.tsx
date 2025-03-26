@@ -42,19 +42,18 @@ const Footer = () => {
             <h4 className="font-semibold text-lg mb-4 border-b border-white/20 pb-2">
               Quick Links
             </h4>
-            <ul className="space-y-3">
+            <div className="space-y-3 ">
               {navItems.map((item, i) => (
-                <li key={i}>
+                <h2 key={i}>
                   <Link
                     href={item.slug}
-                    className="hover:text-white text-gray-100 transition-colors duration-200 flex items-center"
+                    className="hover:text-white text-gray-100  transition-colors duration-200 flex items-center"
                   >
-                    <span className="w-2 h-2 bg-white rounded-full mr-2"></span>
                     {item.name}
                   </Link>
-                </li>
+                </h2>
               ))}
-            </ul>
+            </div>
           </div>
 
           {/* Resources */}
@@ -62,35 +61,33 @@ const Footer = () => {
             <h4 className="font-semibold text-lg mb-4 border-b border-white/20 pb-2">
               Resources
             </h4>
-            <ul className="space-y-3 ">
-              <li>
-                <a
-                  href="#"
+            <div className="space-y-3 ">
+              <div>
+                <Link
+                  href="/codeofconduct"
                   className="hover:text-white text-gray-100 transition-colors duration-200 flex items-center"
                 >
-                  <span className="w-2 h-2 bg-white rounded-full mr-2"></span>
-                  Guidelines
-                </a>
-              </li>
-              <li>
+                  Code Of Conduct
+                </Link>
+              </div>
+              <div>
                 <a
-                  href="#"
+                  href="https://drive.google.com/file/d/1ycHfUpAHLp8JAoystP8t96FmVHQxf7-5/view?usp=sharing"
+                  target="_blank"
                   className="hover:text-white text-gray-100 transition-colors duration-200 flex items-center"
                 >
-                  <span className="w-2 h-2 bg-white rounded-full mr-2"></span>
                   Documentation
                 </a>
-              </li>
-              <li>
-                <a
-                  href="#"
+              </div>
+              <div>
+                <Link
+                  href="/guide"
                   className="hover:text-white text-gray-100 transition-colors duration-200 flex items-center"
                 >
-                  <span className="w-2 h-2 bg-white rounded-full mr-2"></span>
-                  Support
-                </a>
-              </li>
-            </ul>
+                  Guide for Participants
+                </Link>
+              </div>
+            </div>
           </div>
 
           {/* Social Media */}
