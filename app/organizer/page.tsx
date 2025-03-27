@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { Users, Award, Calendar, Target, Trophy, Code2 } from "lucide-react";
 import Link from "next/link";
+import { Button } from "@/components/ui/button";
 
 export default function AboutPage() {
   return (
@@ -215,10 +216,15 @@ export default function AboutPage() {
                 height={200}
                 src="https://lmnstrirupgjxplzedki.supabase.co/storage/v1/object/sign/photos/Graphics_Designing_6a044c6b2a.jpg?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJwaG90b3MvR3JhcGhpY3NfRGVzaWduaW5nXzZhMDQ0YzZiMmEuanBnIiwiaWF0IjoxNzQyOTczNzUwLCJleHAiOjE3NzQ1MDk3NTB9.XlmWEf6SREfyUxuGmtixMijmcMhLcxDAQ5QidfVm-gE"
                 alt="2022 Winner"
-                className="rounded-lg mb-4 mx-auto h-48 w-48 object-cover"
+                className="rounded-lg mb-4 mx-auto h-48 w-68 object-cover"
               />
               <h3 className="font-semibold mb-2">Graphics Designing</h3>
             </div>
+          </Link>
+        </div>
+        <div className="flex pt-6 justify-center">
+          <Link href="https://www.csitabmc.com/events">
+            <Button className="cursor-pointer">View More</Button>
           </Link>
         </div>
       </div>
