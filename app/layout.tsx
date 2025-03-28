@@ -13,7 +13,7 @@ const poppins = Poppins({
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://innovatex.csitabmc.com/"),
-  title: "BMC InnovateX - Hackathon by CSIT Association of BMC",
+  title: "BMC InnovateX | National Level Hackathon",
   description:
     "BMC InnovateX is a national-level hackathon organized by the CSIT Association of Butwal Multiple Campus, fostering innovation and creativity in technology.",
   keywords: [
@@ -29,7 +29,7 @@ export const metadata: Metadata = {
   ],
   authors: [{ name: "BMC InnovateX", url: "https://innovatex.csitabmc.com" }],
   openGraph: {
-    title: "BMC InnovateX - National Level Hackathon",
+    title: "BMC InnovateX | National Level Hackathon",
     description:
       "Join BMC InnovateX, a national-level hackathon by the CSIT Association of Butwal Multiple Campus",
     url: "https://innovatex.csitabmc.com",
@@ -44,10 +44,6 @@ export const metadata: Metadata = {
     ],
     type: "website",
   },
-  icons: {
-    icon: "https://res.cloudinary.com/dtr4vo1dy/image/upload/v1742567539/favicon_wqflub.svg",
-  },
-  manifest: "/site.webmanifest",
 };
 
 export default function RootLayout({
@@ -56,16 +52,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <link
-          rel="icon"
-          href="https://res.cloudinary.com/dtr4vo1dy/image/upload/v1742567539/favicon_wqflub.svg"
-          sizes="any"
-        />
-        <link
-          rel="apple-touch-icon"
-          href="https://res.cloudinary.com/dtr4vo1dy/image/upload/v1742567538/apple-touch-icon_qexcfm.png"
-        />
-        <meta name="theme-color" content="#000000" />
+        <meta />
       </head>
       <body className={`${poppins.className} antialiased`}>
         <Navbar />
