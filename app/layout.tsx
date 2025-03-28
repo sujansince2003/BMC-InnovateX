@@ -38,7 +38,7 @@ export const metadata: Metadata = {
     siteName: "BMC InnovateX",
     images: [
       {
-        url: "/BMC_InnovateX.png",
+        url: "/assets/BMC_InnovateX.png",
         width: 1200,
         height: 630,
         alt: "BMC InnovateX Hackathon",
