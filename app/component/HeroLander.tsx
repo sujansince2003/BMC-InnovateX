@@ -9,9 +9,6 @@ const HeroLander = () => {
           <h1 className="text-xl md:text-3xl lg:text-[30px] text-white font-medium">
             NATIONAL LEVEL HACKATHON
           </h1>
-          {/* <h1 className="text-5xl md:text-5xl lg:text-[90px] font-extrabold text-white">
-            BMC InnovateX
-          </h1> */}
           <div className="w-[100vw]">
             <svg
               className="h-[4rem] md:h-[unset] svg-x w-full flex justify-center items-center"

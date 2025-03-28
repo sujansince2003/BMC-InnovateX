@@ -12,7 +12,8 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
-  title: "BMC InnovateX - Hackathon by CSIT Association of BMC",
+  metadataBase: new URL("https://beta-innovatex.csitabmc.com/"),
+  title: "BMC InnovateX | National Level Hackathon",
   description:
     "BMC InnovateX is a national-level hackathon organized by the CSIT Association of Butwal Multiple Campus, fostering innovation and creativity in technology.",
   keywords: [
@@ -27,37 +28,24 @@ export const metadata: Metadata = {
     "tech enthusiasts",
   ],
   authors: [
-    { name: "CSIT Association of BMC", url: "https://innovatex.csitabmc.com" },
+    { name: "BMC InnovateX", url: "https://beta-innovatex.csitabmc.com" },
   ],
   openGraph: {
-    title: "BMC InnovateX - National Level Hackathon",
+    title: "BMC InnovateX | National Level Hackathon",
     description:
-      "Join BMC InnovateX, a national-level hackathon by the CSIT Association of Butwal Multiple Campus, and build tomorrow’s solutions today!",
-    url: "https://innovatex.csitabmc.com",
+      "Join BMC InnovateX, a national-level hackathon by the CSIT Association of Butwal Multiple Campus",
+    url: "https://beta-innovatex.csitabmc.com",
     siteName: "BMC InnovateX",
     images: [
       {
-        url: "/innovatexOg.png",
+        url: "/BMC_InnovateX.png",
         width: 1200,
         height: 630,
-        alt: "BMC InnovateX Hackathon Banner",
+        alt: "BMC InnovateX Hackathon",
       },
     ],
     type: "website",
   },
-  twitter: {
-    card: "summary_large_image",
-    title: "BMC InnovateX - National Hackathon",
-    description:
-      "BMC InnovateX is a national hackathon that invites tech enthusiasts to showcase their skills and innovate for the future.",
-    images: [
-      "https://res.cloudinary.com/dtr4vo1dy/image/upload/v1742567539/innovatexOg_xffyze.png",
-    ],
-  },
-  icons: {
-    icon: "https://res.cloudinary.com/dtr4vo1dy/image/upload/v1742567539/favicon_wqflub.svg",
-  },
-  manifest: "/site.webmanifest",
 };
 
 export default function RootLayout({
@@ -66,16 +54,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <link
-          rel="icon"
-          href="https://res.cloudinary.com/dtr4vo1dy/image/upload/v1742567539/favicon_wqflub.svg"
-          sizes="any"
-        />
-        <link
-          rel="apple-touch-icon"
-          href="https://res.cloudinary.com/dtr4vo1dy/image/upload/v1742567538/apple-touch-icon_qexcfm.png"
-        />
-        <meta name="theme-color" content="#000000" />
+        <meta />
       </head>
       <body className={`${poppins.className} antialiased`}>
         <Navbar />
