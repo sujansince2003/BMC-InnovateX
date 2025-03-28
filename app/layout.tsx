@@ -12,6 +12,7 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://innovatex.csitabmc.com/"),
   title: "BMC InnovateX - Hackathon by CSIT Association of BMC",
   description:
     "BMC InnovateX is a national-level hackathon organized by the CSIT Association of Butwal Multiple Campus, fostering innovation and creativity in technology.",
@@ -26,33 +27,22 @@ export const metadata: Metadata = {
     "innovation",
     "tech enthusiasts",
   ],
-  authors: [
-    { name: "CSIT Association of BMC", url: "https://innovatex.csitabmc.com" },
-  ],
+  authors: [{ name: "BMC InnovateX", url: "https://innovatex.csitabmc.com" }],
   openGraph: {
     title: "BMC InnovateX - National Level Hackathon",
     description:
-      "Join BMC InnovateX, a national-level hackathon by the CSIT Association of Butwal Multiple Campus, and build tomorrow’s solutions today!",
+      "Join BMC InnovateX, a national-level hackathon by the CSIT Association of Butwal Multiple Campus",
     url: "https://innovatex.csitabmc.com",
     siteName: "BMC InnovateX",
     images: [
       {
-        url: "/innovatexOg.png",
+        url: "/BMC_InnovateX.png",
         width: 1200,
         height: 630,
-        alt: "BMC InnovateX Hackathon Banner",
+        alt: "BMC InnovateX Hackathon",
       },
     ],
     type: "website",
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "BMC InnovateX - National Hackathon",
-    description:
-      "BMC InnovateX is a national hackathon that invites tech enthusiasts to showcase their skills and innovate for the future.",
-    images: [
-      "https://res.cloudinary.com/dtr4vo1dy/image/upload/v1742567539/innovatexOg_xffyze.png",
-    ],
   },
   icons: {
     icon: "https://res.cloudinary.com/dtr4vo1dy/image/upload/v1742567539/favicon_wqflub.svg",
