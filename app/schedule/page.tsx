@@ -74,7 +74,7 @@ export default function SchedulePage() {
           {/* Day 1 */}
           <div className="mb-12">
             <h3 className="text-xl font-semibold mb-6 bg-indigo-50 p-4 rounded-lg">
-              Day 0 - 23<sup>th</sup> Falgun
+              Day 0 - 24<sup>th</sup> Jestha
             </h3>
             <div className="space-y-6">
               <div className="flex items-start bg-gray-50 p-4 rounded-lg">
@@ -94,19 +94,20 @@ export default function SchedulePage() {
           {/* Day 1 */}
           <div className="mb-12">
             <h3 className="text-xl font-semibold mb-6 bg-indigo-50 p-4 rounded-lg">
-              Day 1 - 24<sup>th</sup> Falgun
+              Day 1 - 25<sup>th</sup> Jestha
             </h3>
             <div className="space-y-6">
-              <div className="flex items-start bg-gray-50 p-4 rounded-lg">
-                <div className="flex-shrink-0 w-32 font-semibold">9:00 AM</div>
-                <div>
-                  <div className="font-semibold">Check-in & Registration</div>
+              <div className="flex items-start bg-gray-50 h-[20rem] p-4 rounded-lg">
+                <div className="flex h-full w-full flex-col items-center justify-center">
+                  <div className="font-semibold">
+                    First Day of BMC InnovateX
+                  </div>
                   <p className="text-gray-600">
-                    Collect your participant kit and setup your workspace
+                    Detailed time schedult will be updated soon.
                   </p>
                 </div>
               </div>
-              <div className="flex items-start bg-gray-50 p-4 rounded-lg">
+              {/* <div className="flex items-start bg-gray-50 p-4 rounded-lg">
                 <div className="flex-shrink-0 w-32 font-semibold">9:30 AM</div>
                 <div>
                   <div className="font-semibold">Opening Ceremony</div>
@@ -114,8 +115,8 @@ export default function SchedulePage() {
                     Welcome address, rules briefing, and keynote speech
                   </p>
                 </div>
-              </div>
-              <div className="flex items-start bg-gray-50 p-4 rounded-lg">
+              </div> */}
+              {/* <div className="flex items-start bg-gray-50 p-4 rounded-lg">
                 <div className="flex-shrink-0 w-32 font-semibold">10:00 AM</div>
                 <div>
                   <div className="font-semibold">Hacking Begins</div>
@@ -123,22 +124,23 @@ export default function SchedulePage() {
                     Start working on your projects
                   </p>
                 </div>
-              </div>
+              </div> */}
             </div>
           </div>
 
           {/* Day 2 */}
           <div className="mb-12">
             <h3 className="text-xl font-semibold mb-6 bg-indigo-50 p-4 rounded-lg">
-              Day 2 - 25<sup>th</sup> Falgun
+              Day 2 - 26<sup>th</sup> Jestha
             </h3>
             <div className="space-y-6">
-              <div className="flex items-start bg-gray-50 p-4 rounded-lg">
-                <div className="flex-shrink-0 w-32 font-semibold">00:00 AM</div>
-                <div>
-                  <div className="font-semibold">Mentorship Sessions Begin</div>
+              <div className="flex items-start bg-gray-50 h-[20rem] p-4 rounded-lg">
+                <div className="flex h-full w-full flex-col items-center justify-center">
+                  <div className="font-semibold">
+                    Second Day of BMC InnovateX
+                  </div>
                   <p className="text-gray-600">
-                    One-on-one guidance from industry experts
+                    Detailed time schedult will be updated soon.
                   </p>
                 </div>
               </div>
@@ -148,17 +150,16 @@ export default function SchedulePage() {
           {/* Day 3 */}
           <div>
             <h3 className="text-xl font-semibold mb-6 bg-indigo-50 p-4 rounded-lg">
-              Day 3 - 26<sup>th</sup> Falgun
+              Day 3 - 27<sup>th</sup> Jestha
             </h3>
             <div className="space-y-6">
-              <div className="flex items-start bg-gray-50 p-4 rounded-lg">
-                <div className="flex-shrink-0 w-32 font-semibold">10:00 AM</div>
-                <div>
+              <div className="flex items-start bg-gray-50 h-[20rem] p-4 rounded-lg">
+                <div className="flex h-full w-full flex-col items-center justify-center">
                   <div className="font-semibold">
-                    Project Submission Deadline
+                    Final Day of BMC InnovateX
                   </div>
                   <p className="text-gray-600">
-                    Submit your project for evaluation
+                    Detailed time schedult will be updated soon.
                   </p>
                 </div>
               </div>
@@ -168,7 +169,7 @@ export default function SchedulePage() {
           {/* Day 4 */}
           <div>
             <h3 className="text-xl font-semibold mb-6 bg-indigo-50 p-4 rounded-lg">
-              Day 4 - 27<sup>th</sup> Falgun
+              Day 4 - 28<sup>th</sup> Jestha
             </h3>
             <div className="space-y-6">
               <div className="flex items-start bg-gray-50 p-4 rounded-lg">
