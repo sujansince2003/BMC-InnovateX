@@ -4,6 +4,7 @@ import "./globals.css";
 import Footer from "./component/Footer";
 import Navbar from "./component/Nav";
 import { AdPopup } from "./component/AdPopup";
+import NextTopLoader from "nextjs-toploader";
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -59,6 +60,7 @@ export default function RootLayout({
       <body className={`${poppins.className} antialiased`}>
         <Navbar />
         <AdPopup />
+        <NextTopLoader color="white" showSpinner={false} />
         {children}
         <Footer />
       </body>
