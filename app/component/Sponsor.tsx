@@ -1,43 +1,10 @@
-"use client";
+import { getSponsors } from "@/actions/getSponsor";
 import { sortSponsors } from "@/lib/sponsor";
 import Image from "next/image";
-const data = [
-  {
-    title: "The Municipality",
-    logo: "https://placehold.co/400x200?text=TechInnovate",
-    category: "Government Patron",
-    description:
-      "Leading global techLeading global technology solutions provider specializing in digital transformation and innovative enterprise strategiesLeading global technology solutions provider specializing in digital transformation and innovative enterprise strategiesLeading global technology solutions provider specializing in digital transformation and innovative enterprise strategiesnology solutions provider specializing in digital transformation and innovative enterprise strategies.",
-    url: "#",
-  },
-  {
-    title: "The Sub-Metro",
-    logo: "https://placehold.co/400x200?text=TechInnovate",
-    category: "Government Patron",
-    description:
-      "Leading global techLeading global technology solutions provider specializing in digital transformation and innovative enterprise strategiesLeading global technology solutions provider specializing in digital transformation and innovative enterprise strategiesLeading global technology solutions provider specializing in digital transformation and innovative enterprise strategiesnology solutions provider specializing in digital transformation and innovative enterprise strategies.",
-    url: "#",
-  },
-  {
-    title: "Narvina Technologies",
-    logo: "https://placehold.co/400x200?text=TechInnovate",
-    category: "Technology Partner",
-    description:
-      "Leading global techLeading global technology solutions provider specializing in digital transformation and innovative enterprise strategiesLeading global technology solutions provider specializing in digital transformation and innovative enterprise strategiesLeading global technology solutions provider specializing in digital transformation and innovative enterprise strategiesnology solutions provider specializing in digital transformation and innovative enterprise strategies.",
-    url: "#",
-  },
-  {
-    title: "Develope The shit",
-    logo: "https://placehold.co/400x200?text=TechInnovate",
-    category: "Networking Partner",
-    description:
-      "Leading global techLeading global technology solutions provider specializing in digital transformation and innovative enterprise strategiesLeading global technology solutions provider specializing in digital transformation and innovative enterprise strategiesLeading global technology solutions provider specializing in digital transformation and innovative enterprise strategiesnology solutions provider specializing in digital transformation and innovative enterprise strategies.",
-    url: "#",
-  },
-];
-const sponsors = sortSponsors(data);
 
-export default function Sponsors() {
+export default async function Sponsors() {
+  const data = await getSponsors();
+  const sponsors = sortSponsors(data);
   return (
     <section className="py-20 bg-gradient-to-b bg-[#f4f4f4] overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
@@ -54,7 +21,7 @@ export default function Sponsors() {
           </p>
         </div>
 
-        {/* Title Sponsor */}
+        {/* name Sponsor */}
         <div className="mb-10 p-4 rounded-lg bg-gray-50 ">
           <div className="p-4">
             <div className="text-center mb-8">
@@ -64,9 +31,10 @@ export default function Sponsors() {
             </div>
             <div className="flex gap-8 mx-auto">
               <SponsorCard
-                title="CSIT Association of BMC"
-                description="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto dolorum ipsam ipsa ea, nihil exercitationem ut error mollitia quas dolor! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem quasi fugit quam deleniti omnis nulla suscipit cupiditate cumque, et adipisici. Voluptatem quasi fugit quam deleniti omnis nulla suscipit cupiditate cumque, et adipisici elit. Voluptatem quasi fugit quam deleniti omnis nulla suscipit cupiditate cumque, et nesciunt.ng elit. Voluptatem quasi fugit quam deleniti omnis nulla suscipit cupiditate cumque, et adipisici. Voluptatem quasi fugit quam deleniti omnis nulla suscipit cupiditate cumque, et nesciunt."
-                url="#"
+                name="CSIT Association of BMC"
+                description="CSIT Association of BMC is a non-profitable organization inside Butwal Multiple Campus created for the welfare of CSIT Students by the CSIT students and operating actively since 2016. We have been conducting several tech and non-tech workshops internally and helping students to connect with national tech community. Similarly, we also play a part in assisting our college department for technical assistance and provide suggestions based on technology criteria. We believe that the students should be provided with the relevant skills and platform to prepare them for their career and at last we are at Butwal Multiple Campus with the motive of helping students to address their problem as well."
+                logo="https://lmnstrirupgjxplzedki.supabase.co/storage/v1/object/public/photos//csitabmc.png"
+                url="https://csitabmc.com"
               />
             </div>
           </div>
@@ -80,9 +48,10 @@ export default function Sponsors() {
             </div>
             <div className="flex gap-8 mx-auto">
               <SponsorCard
-                title="Butwal Multiple Campus"
-                description="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto dolorum ipsam ipsa ea, nihil exercitationem ut error mollitia quas dolor! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem quasi fugit quam deleniti omnis nulla suscipit cupiditate cumque, et adipisici. Voluptatem quasi fugit quam deleniti omnis nulla suscipit cupiditate cumque, et adipisici elit. Voluptatem quasi fugit quam deleniti omnis nulla suscipit cupiditate cumque, et nesciunt.ng elit. Voluptatem quasi fugit quam deleniti omnis nulla suscipit cupiditate cumque, et adipisici. Voluptatem quasi fugit quam deleniti omnis nulla suscipit cupiditate cumque, et nesciunt."
-                url="#"
+                name="Butwal Multiple Campus"
+                description="Butwal  Multiple Campus was established in 2030 B.S. This campus has been running four bachelors’ level programs in the faculties of Humanities, Science, Education, Management and M.Ed. (Nepali, EPM), MA (English, Nepali, Economics), MBS  to provide education to the educationally disadvantaged students, women, backward ethnic groups and others. The admission rate of the students is poor in humanities. Similarly, admission trend of students in education and management is also not as the expectation of the campus. We have been planning and trying hard, and experiencing some changes on the trend."
+                logo="https://lmnstrirupgjxplzedki.supabase.co/storage/v1/object/public/sponsors//TU_Logo.jpg"
+                url="https://bumc.tu.edu.np/"
               />
             </div>
           </div>
@@ -94,7 +63,7 @@ export default function Sponsors() {
             </div>
             <div className="flex gap-8 mx-auto">
               <SponsorCard
-                title="CSIT Association of BMC"
+                name="CSIT Association of BMC"
                 description="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto dolorum ipsam ipsa ea, nihil exercitationem ut error mollitia quas dolor! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem quasi fugit quam deleniti omnis nulla suscipit cupiditate cumque, et adipisici. Voluptatem quasi fugit quam deleniti omnis nulla suscipit cupiditate cumque, et adipisici elit. Voluptatem quasi fugit quam deleniti omnis nulla suscipit cupiditate cumque, et nesciunt.ng elit. Voluptatem quasi fugit quam deleniti omnis nulla suscipit cupiditate cumque, et adipisici. Voluptatem quasi fugit quam deleniti omnis nulla suscipit cupiditate cumque, et nesciunt."
                 url="#"
               />
@@ -103,8 +72,8 @@ export default function Sponsors() {
         </div>
         {/* Sponsor Section */}
         <div className="flex flex-wrap gap-4 ">
-          {Object.keys(sponsors).map((sponsorTitle, i) => {
-            const sponsor = sponsors[sponsorTitle];
+          {Object.keys(sponsors).map((sponsorname, i) => {
+            const sponsor = sponsors[sponsorname];
             return (
               <div
                 key={i}
@@ -122,7 +91,7 @@ export default function Sponsors() {
               >
                 <div className="text-center mb-8">
                   <h3 className="inline-block text-xl font-semibold text-gray-700 px-6 py-2 bg-white rounded-full shadow-sm border border-gray-100">
-                    {sponsorTitle}
+                    {sponsorname}
                   </h3>
                 </div>
                 <div
@@ -133,14 +102,12 @@ export default function Sponsors() {
                   {sponsor.map((spon, i) => (
                     <SponsorCard
                       key={i}
-                      title={spon.title}
+                      name={spon.name}
                       description={spon.description}
-                      url={spon.url}
+                      url={spon.website}
+                      logo={spon.logo}
                       className="p-4 min-w-[20rem] mb-10 rounded-xl"
                     />
-                    // <div className="p-4 w-[30rem] bg-red-500" key={i}>
-                    //   Helo
-                    // </div>
                   ))}
                 </div>
               </div>
@@ -153,13 +120,13 @@ export default function Sponsors() {
 }
 
 function SponsorCard({
-  title,
+  name,
   description,
   url,
   logo,
   className,
 }: {
-  title: string;
+  name: string;
   description: string;
   url: string;
   logo?: string;
@@ -176,9 +143,9 @@ function SponsorCard({
             : "https://images.unsplash.com/photo-1611162617474-5b21e879e113?w=400&h=200&fit=crop&q=80"
         }
         alt="TechCorp"
-        className="h-4w-40 w-40 object-contain border border-primary rounded-md mb-4"
+        className="max-h-25 w-40 object-contain rounded-md mb-4"
       />
-      <h3 className="text-xl font-semibold mb-2">{title}</h3>
+      <h3 className="text-xl font-semibold mb-2">{name}</h3>
       <p className={`text-gray-600 mb-4 line-clamp-5 `}>{description}</p>
       <a href={url} className="text-primary underline flex items-center">
         Visit Website

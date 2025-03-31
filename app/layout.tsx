@@ -3,8 +3,8 @@ import { Poppins } from "next/font/google";
 import "./globals.css";
 import Footer from "./component/Footer";
 import Navbar from "./component/Nav";
-import { AdPopup } from "./component/AdPopup";
 import NextTopLoader from "nextjs-toploader";
+import { AdPopup } from "./component/AdPopup";
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -59,8 +59,8 @@ export default function RootLayout({
       </head>
       <body className={`${poppins.className} antialiased`}>
         <Navbar />
-        <AdPopup />
         <NextTopLoader color="white" showSpinner={false} />
+        <AdPopup />
         {children}
         <Footer />
       </body>
