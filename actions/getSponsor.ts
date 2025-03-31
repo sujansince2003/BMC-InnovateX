@@ -14,9 +14,11 @@ export const getSponsorPamphlet = async () => {
     },
   });
 
+  const filteredData = data.filter((sponsor) => sponsor.pamphlet !== "");
+
   // select the random sponsor from the list
-  const randomIndex = Math.floor(Math.random() * data.length);
-  const selectedSponsor = data[randomIndex];
+  const randomIndex = Math.floor(Math.random() * filteredData.length);
+  const selectedSponsor = filteredData[randomIndex];
 
   return {
     id: selectedSponsor.id,
