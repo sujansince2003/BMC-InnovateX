@@ -40,7 +40,7 @@ export default async function Sponsors() {
           </div>
         </div>
         <div className="mb-20 p-4 rounded-lg grid lg:grid-cols-2 gap-4">
-          <div className="bg-gray-50 p-4">
+          <div className="bg-gray-50 col-span-2 p-4">
             <div className="text-center mb-8">
               <h3 className="inline-block text-xl font-semibold text-gray-700 px-6 py-2 bg-white rounded-full shadow-sm border border-gray-100">
                 Title Sponsor
@@ -55,7 +55,7 @@ export default async function Sponsors() {
               />
             </div>
           </div>
-          <div className="bg-gray-50 p-4">
+          {/* <div className="bg-gray-50 p-4">
             <div className="text-center mb-8">
               <h3 className="inline-block text-xl font-semibold text-gray-700 px-6 py-2 bg-white rounded-full shadow-sm border border-gray-100">
                 Powered By
@@ -68,7 +68,7 @@ export default async function Sponsors() {
                 url="#"
               />
             </div>
-          </div>
+          </div> */}
         </div>
         {/* Sponsor Section */}
         <div className="flex flex-wrap gap-4 ">
