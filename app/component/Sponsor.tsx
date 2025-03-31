@@ -143,7 +143,7 @@ function SponsorCard({
             : "https://images.unsplash.com/photo-1611162617474-5b21e879e113?w=400&h=200&fit=crop&q=80"
         }
         alt="TechCorp"
-        className="max-h-25 w-40 object-contain rounded-md mb-4"
+        className="h-25 w-40 object-contain rounded-md mb-4"
       />
       <h3 className="text-xl font-semibold mb-2">{name}</h3>
       <p className={`text-gray-600 mb-4 line-clamp-5 `}>{description}</p>
