@@ -10,7 +10,7 @@ const KeyInfo = () => {
           <InfoCard
             icon={<Calendar className="w-8 h-8 text-[#0A9AAB]" />}
             title="Date"
-            value="24 - 26 Falgun"
+            value="25 - 27 Falgun"
           />
           <InfoCard
             icon={<Clock className="w-8 h-8 text-[#0A9AAB]" />}
