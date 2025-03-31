@@ -7,7 +7,7 @@ const Footer = () => {
     { name: "Home", slug: "/", active: true },
     { name: "Organizer", slug: "/organizer", active: true },
     { name: "Schedule", slug: "/schedule", active: true },
-    { name: "Prizes", slug: "/prizes", active: true },
+    { name: "Teams", slug: "/teams", active: true },
     { name: "Sponsors", slug: "/sponsors", active: true },
     { name: "Tracks", slug: "/tracks", active: true },
     { name: "Contact", slug: "/contact", active: true },
