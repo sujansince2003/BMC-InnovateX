@@ -8,9 +8,14 @@ import {
 
 const faqData = [
   {
+    question: "When and where is BMC InnovateX taking place?",
+    answer:
+      "BMC InnovateX will be held at Butwal Multiple Campus, Butwal-03, Rupandehi, from the 25th to the 27th of Jestha, 2082",
+  },
+  {
     question: "Who can participate?",
     answer:
-      "Anyone aged 18 and above can participate. Whether you're a student, professional, or enthusiast, all are welcome!",
+      "Anyone aged 16 to 27 can participate. Whether you're a student, professional, or enthusiast, all are welcome!",
   },
   {
     question: "Do I need a team?",
@@ -20,12 +25,22 @@ const faqData = [
   {
     question: "What should I bring?",
     answer:
-      "Bring your laptop, charger, and any hardware you might need. We'll provide food, drinks, and a comfortable hacking space.",
+      "Bring your laptop, charger, and any necessary hardware you might need. We'll provide food, drinks, accommodation, and a comfortable hacking space.",
   },
   {
     question: "Is there a participation fee?",
     answer:
-      "Yes, we have a participation fee TBA per team. This covers food, drinks, and a comfortable hacking space.",
+      "Yes, we have a participation fee Rs 3000/- per team. This covers food, drinks, accommodation, and a comfortable hacking space.",
+  },
+  {
+    question: "Can we use pre-existing code?",
+    answer:
+      "No, all code must be written during the hackathon. However, you can use libraries and APIs.",
+  },
+  {
+    question: "How can I get more updates about the event?",
+    answer:
+      "No, all code must be written during the hackathon. However, you can use libraries and APIs.",
   },
   {
     question: "What about intellectual property?",

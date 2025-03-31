@@ -1,5 +1,7 @@
 import { LeftDots, RightDots } from "@/components/custom/Dots";
+import { Button } from "@/components/ui/button";
 import Image from "next/image";
+import Link from "next/link";
 
 const HeroLander = () => {
   return (
@@ -35,14 +37,15 @@ const HeroLander = () => {
             Think Big, Innovate Bigger
           </h1>
         </div>
-        <div>
+
+        <Link href="https://forms.gle/aEWGMtuE9ukRQHtv7" target="_blank">
           <button
-            className="hover:bg-white bg-white hover:text-[#0684A1] border-2 border-white text-lg md:text-2xl text-[#0684A1] mt-4 md:mt-6 rounded-3xl py-2 px-6 md:px-8"
-            disabled
+            className="border-2 border-white text-lg text-white py-2 px-6 transition-all duration-300 ease-in-out cursor-pointer 
+  hover:bg-white hover:text-[#008FAD] hover:scale-105 rounded-md shadow-lg"
           >
-            Registration Opening Soon
+            Register Now
           </button>
-        </div>
+        </Link>
       </div>
 
       {/* Background Images */}
