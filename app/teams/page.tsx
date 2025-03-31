@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { Linkedin, Mail } from "lucide-react";
-// Team data structure
+
 type TeamMember = {
   name: string;
   role?: string;
@@ -64,7 +64,7 @@ const ocMembers: TeamMember[] = [
   },
   {
     name: "Namita Thapa",
-    linkedin: "",
+    linkedin: "namita-thapa-4489a3355/",
   },
   {
     name: "Aayush Chalise",
