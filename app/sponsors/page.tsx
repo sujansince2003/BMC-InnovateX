@@ -1,3 +1,4 @@
+export const dynamic = "force-dynamic";
 import React from "react";
 import { Mail, Building, ExternalLink } from "lucide-react";
 import Sponsors from "../component/Sponsor";

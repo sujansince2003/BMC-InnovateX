@@ -1,3 +1,4 @@
+export const dynamic = "force-dynamic";
 import FAQ from "./component/FAQ";
 import HeroLander from "./component/HeroLander";
 import KeyInfo from "./component/KeyInfo";
