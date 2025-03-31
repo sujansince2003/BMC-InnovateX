@@ -103,7 +103,7 @@ export default function SchedulePage() {
                     First Day of BMC InnovateX
                   </div>
                   <p className="text-gray-600">
-                    Detailed time schedult will be updated soon.
+                    Detailed time schedule will be updated soon.
                   </p>
                 </div>
               </div>
@@ -140,7 +140,7 @@ export default function SchedulePage() {
                     Second Day of BMC InnovateX
                   </div>
                   <p className="text-gray-600">
-                    Detailed time schedult will be updated soon.
+                    Detailed time schedule will be updated soon.
                   </p>
                 </div>
               </div>
@@ -159,7 +159,7 @@ export default function SchedulePage() {
                     Final Day of BMC InnovateX
                   </div>
                   <p className="text-gray-600">
-                    Detailed time schedult will be updated soon.
+                    Detailed time schedule will be updated soon.
                   </p>
                 </div>
               </div>
