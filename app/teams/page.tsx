@@ -4,7 +4,7 @@ import { Linkedin, Mail } from "lucide-react";
 // Team data structure
 type TeamMember = {
   name: string;
-  role: string;
+  role?: string;
   photo?: string;
   email?: string;
   linkedin?: string;
@@ -12,100 +12,14 @@ type TeamMember = {
   phone?: string;
 };
 
-type TeamSection = {
-  title: string;
-  members: TeamMember[];
-};
-
-const teamData: TeamSection[] = [
-  {
-    title: "Technical Team",
-    members: [
-      {
-        name: "Bipin Khatri",
-        role: "Technical Co Lead",
-        photo: "https://placehold.co/300x300?text=Alex",
-        email: "alex@example.com",
-        linkedin: "alexjohnson",
-        github: "alexjohnson",
-        phone: "+977 9867418196",
-      },
-      {
-        name: "Sanchit Pandey",
-        role: "Technical Co Lead",
-        photo: "https://placehold.co/300x300?text=Sarah",
-        email: "sarah@example.com",
-        linkedin: "sarahwilliams",
-        github: "sarahwilliams",
-        phone: "+5566778899",
-      },
-    ],
-  },
-  {
-    title: "Promotion Team",
-    members: [
-      {
-        name: "Jane Smith",
-        role: "Hackathon Lead",
-        photo: "https://placehold.co/300x300?text=Jane",
-        email: "jane.smith@example.com",
-        linkedin: "janesmith",
-        github: "janesmith",
-        phone: "+1234567890",
-      },
-      {
-        name: "John Doe",
-        role: "Hackathon Co-Lead",
-        photo: "https://placehold.co/300x300?text=John",
-        email: "john.doe@example.com",
-        linkedin: "johndoe",
-        github: "johndoe",
-        phone: "+0987654321",
-      },
-    ],
-  },
-];
-
 const ocMembers: TeamMember[] = [
   {
-    name: "David Wilson",
-    role: "Technical Team",
-    linkedin: "davidwilson",
+    name: "Pratik Aryal",
+    linkedin: "pratik-aryal-256a79289",
   },
   {
-    name: "Sophia Martinez",
-    role: "Design Team",
-    linkedin: "sophiamartinez",
-  },
-  {
-    name: "James Taylor",
-    role: "Sponsor Team",
-    linkedin: "jamestaylor",
-  },
-  {
-    name: "Olivia Anderson",
-    role: "Marketing Team",
-    linkedin: "oliviaanderson",
-  },
-  {
-    name: "Daniel Thomas",
-    role: "Logistics Team",
-    linkedin: "danielthomas",
-  },
-  {
-    name: "Emma Jackson",
-    role: "Content Team",
-    linkedin: "emmajackson",
-  },
-  {
-    name: "William White",
-    role: "Technical Team",
-    linkedin: "williamwhite",
-  },
-  {
-    name: "Ava Harris",
-    role: "Design Team",
-    linkedin: "avaharris",
+    name: "Sangit Gyawali",
+    linkedin: "sangitgyawali",
   },
 ];
 
@@ -129,63 +43,200 @@ export default function Teams() {
           </p>
         </div>
 
-        <div className="rounded-xl shadow- overflow-hidden">
-          <div className="text-center py-4">
+        <div className="rounded-xl grid grid-cols-2 overflow-hidden">
+          <section className="text-center py-4">
             <h3 className="inline-block text-lg font-semibold text-gray-700 px-10 py-1.5 bg-white rounded-full shadow-sm border border-gray-100">
               BMC InnovateX
               <p className="text-gray-500 text-sm">Co Leads</p>
             </h3>
             <div className="px-4 sm:px-6 py-6">
-              <div className="flex w-1/2 m-auto gap-2">
+              <div className="flex gap-2">
                 <MemberCard
                   member={{
                     name: "Suman Bhattarai",
                     role: "Event Co Lead",
-                    photo: "https://placehold.co/300x300?text=Jane",
-                    linkedin: "janesmith",
-                    github: "janesmith",
-                    phone: "+1234567890",
+                    photo:
+                      "https://lmnstrirupgjxplzedki.supabase.co/storage/v1/object/public/photos//suman_r6pfi0.webp",
+                    linkedin: "suman-bhattarai-9b025322b",
+                    phone: "9827144108",
                   }}
                 />
                 <MemberCard
                   member={{
                     name: "Sujan Khatri",
                     role: "Event Co Lead",
-                    photo: "https://placehold.co/300x300?text=Jane",
-                    linkedin: "janesmith",
-                    github: "janesmith",
-                    phone: "+1234567890",
+                    photo:
+                      "https://lmnstrirupgjxplzedki.supabase.co/storage/v1/object/public/photos//SUJAN_clyi3v.webp",
+                    linkedin: "sujansince2003",
+                    phone: "9843409076",
                   }}
                 />
               </div>
             </div>
-          </div>
-        </div>
-
-        <div className="grid  md:grid-cols-2 gap-2">
-          {teamData.map((section, sectionIndex) => (
-            <div
-              key={sectionIndex}
-              className="rounded-xl shadow- overflow-hidden"
-            >
-              <div className="text-center py-4">
-                <h3 className="inline-block text-lg font-semibold text-gray-700 px-10 py-1.5 bg-white rounded-full shadow-sm border border-gray-100">
-                  {section.title}
-                  <p className="text-gray-500 text-sm">Co Leads</p>
-                </h3>
-              </div>
-
-              <div className="px-4 sm:px-6 pb-6">
-                {section.title !== "Organizing Committee" && (
-                  <div className="grid grid-cols-2  gap-4">
-                    {section.members.map((member, memberIndex) => (
-                      <MemberCard key={memberIndex} member={member} />
-                    ))}
-                  </div>
-                )}
+          </section>
+          <section className="text-center py-4">
+            <h3 className="inline-block text-lg font-semibold text-gray-700 px-10 py-1.5 bg-white rounded-full shadow-sm border border-gray-100">
+              Technical
+              <p className="text-gray-500 text-sm">Co Leads</p>
+            </h3>
+            <div className="px-4 sm:px-6 py-6">
+              <div className="flex gap-2">
+                <MemberCard
+                  member={{
+                    name: "Bipin Khatri",
+                    role: "Technical |  Co Lead",
+                    photo:
+                      "https://lmnstrirupgjxplzedki.supabase.co/storage/v1/object/public/photos//1743430288015.JPG",
+                    linkedin: "bipinkhatri",
+                    phone: "9867418196",
+                  }}
+                />
+                <MemberCard
+                  member={{
+                    name: "Sanchit Pandey",
+                    role: "Technical |  Co Lead",
+                    photo:
+                      "https://lmnstrirupgjxplzedki.supabase.co/storage/v1/object/public/photos//SANCHIT_p2f5ue.webp",
+                    linkedin: "sanchitpandeyyy",
+                    phone: "9841148149",
+                  }}
+                />
               </div>
             </div>
-          ))}
+          </section>
+        </div>
+
+        <div className="grid md:grid-cols-4 gap-2">
+          <section className="rounded-xl col-span-3 overflow-hidden">
+            <div className="text-center py-4">
+              <h3 className="inline-block text-lg font-semibold text-gray-700 px-20 py-1.5 bg-white rounded-full shadow-sm border border-gray-100">
+                Logistics
+                <p className="text-gray-500 text-sm">Lead</p>
+              </h3>
+            </div>
+            <div className="px-4 sm:px-6 pb-6">
+              <div className="grid grid-cols-3  gap-4">
+                <MemberCard
+                  member={{
+                    name: "Kritan Aryal",
+                    role: "Logistics | Co Lead",
+                    photo:
+                      "https://lmnstrirupgjxplzedki.supabase.co/storage/v1/object/public/photos//KRITAN_wyjb7r.webp",
+                    linkedin: "aryalkritan11",
+                    phone: "9863174678",
+                  }}
+                />
+                <MemberCard
+                  member={{
+                    name: "Krishna Jaiswal",
+                    role: "Logistics | Co Lead",
+                    photo: "https://placehold.co/300x300?text=Jane",
+                    linkedin: "",
+                    phone: "9863173473",
+                  }}
+                />
+                <MemberCard
+                  member={{
+                    name: "Karuna Pyakurel",
+                    role: "Logistics | Co Lead",
+                    photo:
+                      "https://lmnstrirupgjxplzedki.supabase.co/storage/v1/object/public/photos//KARUNA_lfuxdb.webp",
+                    linkedin: "karuna-pyakurel-abbb172a8",
+                    phone: "9867385552",
+                  }}
+                />
+              </div>
+            </div>
+          </section>
+          <section className="rounded-xl overflow-hidden">
+            <div className="text-center py-4">
+              <h3 className="inline-block text-lg font-semibold text-gray-700 px-10 py-1.5 bg-white rounded-full shadow-sm border border-gray-100">
+                Design
+                <p className="text-gray-500 text-sm">Lead</p>
+              </h3>
+            </div>
+            <div className="px-4 sm:px-6 pb-6">
+              <div className="grid grid-cols-1  gap-4">
+                <MemberCard
+                  member={{
+                    name: "Anuradha Pandey",
+                    role: "Design | Lead",
+                    photo:
+                      "https://lmnstrirupgjxplzedki.supabase.co/storage/v1/object/public/photos//ANU_kwix9a.webp",
+                    linkedin: "anuradha-pandey-2936a2321",
+                    phone: "9860116081",
+                  }}
+                />
+              </div>
+            </div>
+          </section>
+
+          <section className="rounded-xl overflow-hidden">
+            <div className="text-center py-4">
+              <h3 className="inline-block text-lg font-semibold text-gray-700 px-10 py-1.5 bg-white rounded-full shadow-sm border border-gray-100">
+                Sponsorship
+                <p className="text-gray-500 text-sm">Lead</p>
+              </h3>
+            </div>
+            <div className="px-4 sm:px-6 pb-6">
+              <div className="grid grid-cols-1  gap-4">
+                <MemberCard
+                  member={{
+                    name: "Bivek Acharya",
+                    role: "Sponsor | Lead",
+                    photo:
+                      "https://lmnstrirupgjxplzedki.supabase.co/storage/v1/object/public/photos//BIBEK_ypwryr.webp",
+                    linkedin: "bivek-acharya-5746282b2",
+                    phone: "9857082009",
+                  }}
+                />
+              </div>
+            </div>
+          </section>
+          <section className="rounded-xl overflow-hidden">
+            <div className="text-center py-4">
+              <h3 className="inline-block text-lg font-semibold text-gray-700 px-10 py-1.5 bg-white rounded-full shadow-sm border border-gray-100">
+                Documentation
+                <p className="text-gray-500 text-sm">Lead</p>
+              </h3>
+            </div>
+            <div className="px-4 sm:px-6 pb-6">
+              <div className="grid grid-cols-1  gap-4">
+                <MemberCard
+                  member={{
+                    name: "Shikshya Acharya",
+                    role: "Documentation | Lead",
+                    photo:
+                      "https://lmnstrirupgjxplzedki.supabase.co/storage/v1/object/public/photos//shikshya_qw8rge.webp",
+                    linkedin: "shikshyaacharyaa",
+                    phone: "9849511233",
+                  }}
+                />
+              </div>
+            </div>
+          </section>
+          <section className="rounded-xl overflow-hidden">
+            <div className="text-center py-4">
+              <h3 className="inline-block text-lg font-semibold text-gray-700 px-10 py-1.5 bg-white rounded-full shadow-sm border border-gray-100">
+                Content & Promotion
+                <p className="text-gray-500 text-sm">Lead</p>
+              </h3>
+            </div>
+            <div className="px-4 sm:px-6 pb-6">
+              <div className="grid grid-cols-1  gap-4">
+                <MemberCard
+                  member={{
+                    name: "Govinda Sagar Bhusal",
+                    role: "Content & Promotion | Lead",
+                    photo:
+                      "https://lmnstrirupgjxplzedki.supabase.co/storage/v1/object/public/photos//GOVINDA_cma3ba.webp",
+                    linkedin: "shikshyaacharyaa",
+                    phone: "9843875170",
+                  }}
+                />
+              </div>
+            </div>
+          </section>
         </div>
 
         <div className="text-center py-4">
@@ -208,12 +259,12 @@ const MemberCard = ({ member }: { member: TeamMember }) => {
     <div className="bg-white rounded-xl shadow-sm overflow-hidden hover:shadow-md transition-all duration-300 transform hover:-translate-y-1 border border-gray-100 flex flex-col w-full">
       {member.photo && (
         <div className="relative w-full pt-[100%] overflow-hidden bg-gray-50">
-          <div className="absolute inset-2 rounded-xl overflow-hidden">
+          <div className="absolute inset-0 overflow-hidden">
             <Image
               src={member.photo || "/placeholder.svg"}
               alt={member.name}
               fill
-              className="object-cover"
+              className="object-cover grayscale-30 object-center"
             />
           </div>
         </div>
