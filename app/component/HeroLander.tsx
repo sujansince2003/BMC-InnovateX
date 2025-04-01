@@ -41,7 +41,7 @@ const HeroLander = () => {
         <Link href="https://forms.gle/aEWGMtuE9ukRQHtv7" target="_blank">
           <button
             className="border-2 border-white text-lg text-white py-2 px-6 transition-all duration-300 ease-in-out cursor-pointer 
-  hover:bg-white hover:text-[#008FAD] hover:scale-105 rounded-md shadow-lg"
+  hover:bg-white hover:text-[#008FAD] hover:scale-105 rounded-md hover:shadow-lg shadow-md"
           >
             Register Now
           </button>
