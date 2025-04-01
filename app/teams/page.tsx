@@ -66,6 +66,10 @@ const ocMembers: TeamMember[] = [
     name: "Aayush Chalise",
     linkedin: "aayush-chalise-a94b522bb/",
   },
+  {
+    name: "Dipendra Hamal Thakuri",
+    linkedin: "",
+  },
 ];
 
 export default function Teams() {
