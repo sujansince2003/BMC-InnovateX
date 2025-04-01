@@ -251,7 +251,7 @@ export default function Teams() {
               </h3>
             </div>
             <div className="px-4  sm:px-6 pb-6">
-              <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4  gap-10">
+              <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 px-8 sm:px-0 gap-10">
                 <MemberCard
                   member={{
                     name: "Kritan Aryal",
