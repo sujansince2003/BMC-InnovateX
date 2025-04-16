@@ -55,6 +55,21 @@ export default async function Sponsors() {
               />
             </div>
           </div>
+          <div className="bg-gray-50 col-span-2 p-4">
+            <div className="text-center mb-8">
+              <h3 className="inline-block text-xl font-semibold text-gray-700 px-6 py-2 bg-white rounded-full shadow-sm border border-gray-100">
+                Platinum Sponsor
+              </h3>
+            </div>
+            <div className="flex gap-8 mx-auto">
+              <SponsorCard
+                name="Grace International Butwal"
+                description="Grace International Butwal is a premier educational consultancy in Nepal, dedicated to guiding students toward global academic opportunities. With over a decade of experience, it specializes in study abroad services for countries like Australia, New Zealand, the UK, the USA, and Canada. Grace International also offers expert preparation classes for IELTS, PTE, GMAT, TOEFL, and SAT, ensuring students are well-equipped for their educational journey."
+                logo="https://lmnstrirupgjxplzedki.supabase.co/storage/v1/object/public/sponsors//Grace-Logo-white-768x257.png"
+                url="https://graceintlgroup.com/"
+              />
+            </div>
+          </div>
           {/* <div className="bg-gray-50 p-4">
             <div className="text-center mb-8">
               <h3 className="inline-block text-xl font-semibold text-gray-700 px-6 py-2 bg-white rounded-full shadow-sm border border-gray-100">

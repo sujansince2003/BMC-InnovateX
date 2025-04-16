@@ -38,21 +38,20 @@ const HeroLander = () => {
           </h1>
         </div>
 
-        {/* <Link href="https://forms.gle/aEWGMtuE9ukRQHtv7" target="_blank">
+        <Link href="https://forms.gle/aEWGMtuE9ukRQHtv7" target="_blank">
           <button
-            className="border-2 border-white text-lg text-white py-2 px-6 transition-all duration-300 ease-in-out cursor-pointer 
-  hover:bg-white hover:text-[#008FAD] hover:scale-105 rounded-md hover:shadow-lg shadow-md"
-            disabled
+            className="border-2 border-white text-lg  py-2 px-6 transition-all duration-300 ease-in-out cursor-pointer 
+  bg-white text-[#008FAD] hover:scale-105 rounded-md hover:shadow-lg shadow-md"
           >
-            Registration Opening Soon
+            Register Now
           </button>
-        </Link> */}
-        <button
+        </Link>
+        {/* <button
           className="border-2 border-white text-lg  py-2 px-6 transition-all duration-300 ease-in-out  bg-gray-100 text-[#008FAD] rounded-md shadow-md"
           disabled
         >
           Registration Opening Soon
-        </button>
+        </button> */}
       </div>
 
       {/* Background Images */}
