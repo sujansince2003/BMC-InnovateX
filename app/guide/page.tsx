@@ -1,5 +1,6 @@
 import React from "react";
 import { BookOpen, Lightbulb, Target, Rocket, Brain } from "lucide-react";
+import Link from "next/link";
 
 export default function BlogPage() {
   return (
@@ -244,9 +245,15 @@ export default function BlogPage() {
               Register now and take your first step towards becoming a hackathon
               ninja!
             </p>
-            <button className="bg-white disabled text-[#008FAD] px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition">
-              Register Opening Soon
-            </button>
+            <Link
+              className="cursor-pointer hober:scale-105 transition-all duration-300 ease-in-out"
+              target="_blank"
+              href="https://forms.gle/aEWGMtuE9ukRQHtv7"
+            >
+              <button className="bg-white disabled text-[#008FAD] px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition">
+                Register Now
+              </button>
+            </Link>
           </div>
         </div>
       </div>
