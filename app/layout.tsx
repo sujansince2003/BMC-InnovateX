@@ -4,7 +4,12 @@ import "./globals.css";
 import Footer from "./component/Footer";
 import Navbar from "./component/Nav";
 import NextTopLoader from "nextjs-toploader";
+import Clarity from "@microsoft/clarity";
 // import { AdPopup } from "./component/AdPopup";
+
+const projectId = "qx8vs6kbbw";
+
+Clarity.init(projectId);
 
 const poppins = Poppins({
   subsets: ["latin"],
