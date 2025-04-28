@@ -5,11 +5,9 @@ import Footer from "./component/Footer";
 import Navbar from "./component/Nav";
 import NextTopLoader from "nextjs-toploader";
 import Clarity from "@microsoft/clarity";
+import GoogleAnalytics from "@/components/custom/GoogleAnalytics";
+import MicrosoftClarity from "@/components/custom/MicrosoftClarity";
 // import { AdPopup } from "./component/AdPopup";
-
-const projectId = "qx8vs6kbbw";
-
-Clarity.init(projectId);
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -55,10 +53,14 @@ export const metadata: Metadata = {
 export default function RootLayout({
   children,
 }: Readonly<{ children: React.ReactNode }>) {
+  const clarityProjectId = process.env.CLARITY_PROJECT_ID as string;
+  Clarity.init(clarityProjectId);
   return (
     <html lang="en">
       <head>
         <meta />
+        <GoogleAnalytics />
+        <MicrosoftClarity />
       </head>
       <body className={`${poppins.className} antialiased`}>
         <Navbar />
