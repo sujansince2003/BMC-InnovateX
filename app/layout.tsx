@@ -7,6 +7,7 @@ import NextTopLoader from "nextjs-toploader";
 import Clarity from "@microsoft/clarity";
 import GoogleAnalytics from "@/components/custom/GoogleAnalytics";
 import MicrosoftClarity from "@/components/custom/MicrosoftClarity";
+import { Analytics } from "@vercel/analytics/react";
 // import { AdPopup } from "./component/AdPopup";
 
 const poppins = Poppins({
@@ -29,6 +30,12 @@ export const metadata: Metadata = {
     "technology event",
     "programming challenge",
     "innovation",
+    "InnovateX",
+    "national level hackathon",
+    "Butwal",
+    "Nepal",
+    "Biggest Hackathon in Lumbini",
+    "IT Event in Lumbini",
     "tech enthusiasts",
   ],
   authors: [{ name: "BMC InnovateX", url: "https://innovatex.csitabmc.com" }],
@@ -61,6 +68,7 @@ export default function RootLayout({
         <meta />
         <GoogleAnalytics />
         <MicrosoftClarity />
+        <Analytics />
       </head>
       <body className={`${poppins.className} antialiased`}>
         <Navbar />
