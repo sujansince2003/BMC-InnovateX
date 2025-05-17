@@ -68,7 +68,7 @@ const HeroLander = () => {
         </div>
 
         <div
-          className="border-2 border-white text-lg py-2 px-6 transition-all duration-300 ease-in-out 
+          className="border-2 border-white text-lg py-2 md:px-16 px-4 transition-all duration-300 ease-in-out 
           bg-white text-[#008FAD] hover:scale-105 rounded-md hover:shadow-lg shadow-md"
         >
           <div className="text-center font-medium">
