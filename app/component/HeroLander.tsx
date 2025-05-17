@@ -1,9 +1,38 @@
+"use client";
+import { useState, useEffect } from "react";
 import { LeftDots, RightDots } from "@/components/custom/Dots";
-import { Button } from "@/components/ui/button";
 import Image from "next/image";
-import Link from "next/link";
 
 const HeroLander = () => {
+  const [timeLeft, setTimeLeft] = useState({
+    days: 0,
+    hours: 0,
+    minutes: 0,
+    seconds: 0,
+  });
+
+  useEffect(() => {
+    const calculateTimeLeft = () => {
+      const now = new Date();
+      const targetDate = new Date("June 8, 2025 00:00:00");
+      const difference = targetDate.getTime() - now.getTime();
+
+      if (difference > 0) {
+        const days = Math.floor(difference / (1000 * 60 * 60 * 24));
+        const hours = Math.floor((difference / (1000 * 60 * 60)) % 24);
+        const minutes = Math.floor((difference / 1000 / 60) % 60);
+        const seconds = Math.floor((difference / 1000) % 60);
+
+        setTimeLeft({ days, hours, minutes, seconds });
+      }
+    };
+
+    const timer = setInterval(calculateTimeLeft, 1000);
+    calculateTimeLeft(); // Initial call
+
+    return () => clearInterval(timer);
+  }, []);
+
   return (
     <div className="h-[45rem] min-h-[40rem] lg:h-screen bg-[#008FAD] relative overflow-hidden">
       <div className="z-10 flex flex-col gap-14 md:gap-12 items-center absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full px-4">
@@ -38,20 +67,35 @@ const HeroLander = () => {
           </h1>
         </div>
 
-        <Link href="https://forms.gle/aEWGMtuE9ukRQHtv7" target="_blank">
-          <button
-            className="border-2 border-white text-lg  py-2 px-6 transition-all duration-300 ease-in-out cursor-pointer 
-  bg-white text-[#008FAD] hover:scale-105 rounded-md hover:shadow-lg shadow-md"
-          >
-            Register Now
-          </button>
-        </Link>
-        {/* <button
-          className="border-2 border-white text-lg  py-2 px-6 transition-all duration-300 ease-in-out  bg-gray-100 text-[#008FAD] rounded-md shadow-md"
-          disabled
+        <div
+          className="border-2 border-white text-lg py-2 px-6 transition-all duration-300 ease-in-out 
+          bg-white text-[#008FAD] hover:scale-105 rounded-md hover:shadow-lg shadow-md"
         >
-          Registration Opening Soon
-        </button> */}
+          <div className="text-center font-medium">
+            <div>Hackathon Starts In</div>
+            <div className="flex justify-center gap-2 mt-1">
+              <div className="flex flex-col items-center">
+                <span className="text-2xl font-bold">{timeLeft.days}</span>
+                <span className="text-xs">DAYS</span>
+              </div>
+              <span className="text-2xl font-bold">:</span>
+              <div className="flex flex-col items-center">
+                <span className="text-2xl font-bold">{timeLeft.hours}</span>
+                <span className="text-xs">HOURS</span>
+              </div>
+              <span className="text-2xl font-bold">:</span>
+              <div className="flex flex-col items-center">
+                <span className="text-2xl font-bold">{timeLeft.minutes}</span>
+                <span className="text-xs">MINUTES</span>
+              </div>
+              <span className="text-2xl font-bold">:</span>
+              <div className="flex flex-col items-center">
+                <span className="text-2xl font-bold">{timeLeft.seconds}</span>
+                <span className="text-xs">SECONDS</span>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
 
       {/* Background Images */}
