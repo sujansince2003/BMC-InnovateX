@@ -73,7 +73,7 @@ const HeroLander = () => {
         >
           <div className="text-center font-medium">
             <div>Hackathon Starts In</div>
-            <div className="flex justify-center gap-2 mt-1">
+            <div className="flex justify-center gap-4 mt-1">
               <div className="flex flex-col items-center">
                 <span className="text-2xl font-bold">{timeLeft.days}</span>
                 <span className="text-xs">DAYS</span>
