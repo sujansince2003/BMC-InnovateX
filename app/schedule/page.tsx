@@ -48,14 +48,18 @@ export default function SchedulePage() {
           <div className="bg-gray-50 p-8 rounded-xl">
             <div className="space-y-6">
               <div className="flex items-start">
-                <div className="flex-shrink-0 w-32 font-semibold">TBA</div>
+                <div className="flex-shrink-0 w-32 font-semibold">
+                  15,16,17 Jestha
+                </div>
                 <div>
                   <div className="font-semibold">Online Round</div>
                   <p className="text-gray-600">Selection of best 15 Teams.</p>
                 </div>
               </div>
               <div className="flex items-start">
-                <div className="flex-shrink-0 w-32 font-semibold">TBA</div>
+                <div className="flex-shrink-0 w-32 font-semibold">
+                  18 Jestha
+                </div>
                 <div>
                   <div className="font-semibold">Reveled On-site Finalist</div>
                   <p className="text-gray-600">
